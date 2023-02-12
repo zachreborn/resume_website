@@ -135,6 +135,15 @@ header {
     border-radius: 5%;
 }
 
+img {
+    align-items: right;
+    width: 50%;
+    height: auto;
+    display: flex;
+    border: 0.125rem solid #80CBC4;
+    border-radius: 5%;
+}
+
 .descriptors {
     font-weight: 100;
     text-align: left;
