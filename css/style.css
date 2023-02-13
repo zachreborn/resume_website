@@ -33,13 +33,14 @@ p {
     margin-top: 0.25rem;
 }
 
+/* Header Navbar */
 header {
     background-color: #263238;
     width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 2% 2% 1% 2% ;
+    padding: 2% 2% 1% 2%;
     border-bottom: 0.0125rem solid #ECEFF1;
 }
 
@@ -92,16 +93,17 @@ header {
     width: 100%;
 }
 
+.navbar_links li a.active::after{
+    width: 100%;
+}
+
 .greetings {
     align-items: center;
     background-color: #263238;
     color: #ECEFF1;
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
-    margin-left: 15%;
-    padding: 6.25rem 5%;
-    width: 80%;
+    justify-content: space-between;
 }
 
 .greetings_text h1 {
@@ -116,7 +118,7 @@ header {
 }
 
 .greetings_text p {
-    font-size: 2rem;
+    font-size: 1.5rem;
     margin: 0.5rem 1.5rem;
 }
 
@@ -127,19 +129,19 @@ header {
 }
 
 #headshot_image{
-    align-items: right;
-    width: 50%;
     height: auto;
-    display: flex;
+    
     border: 0.125rem solid #80CBC4;
     border-radius: 5%;
+    min-width: 40%;
+    max-width: 60%;
 }
 
 img {
-    align-items: right;
-    width: 50%;
+    min-width: 40%;
+    max-width: 60%;
     height: auto;
-    display: flex;
+    
     border: 0.125rem solid #80CBC4;
     border-radius: 5%;
 }
@@ -154,15 +156,13 @@ img {
     align-items: center;
     display: flex;
     flex-direction: row;
-    margin: 6.25rem 0;
-    padding: 1.7rem;
-    justify-content: left;
-    width: 100%;
+    margin: 5.25rem 1rem;
+    width: 98%;
 }
 
-.experience_header {
-    margin: 0;
-    width: 60%;
+.header {
+    margin-right: 5%;
+    min-width: 14%;
 }
 
 .dot {
@@ -171,15 +171,29 @@ img {
     font-weight: 200;
 }
 
+.test_container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
 .experience_date_header {
     font-size: 1.5rem;
     margin-bottom: 0.5rem;
+    margin-top: 2.5rem;
     color: #80CBC4;
 }
 
-.experience_content {
+.experience.content {
     padding: 1.5rem;
     min-width: 20%;
+    max-width: 40%;
+}
+
+.content {
+    padding: 1.5rem;
+    min-width: 20%;
+    max-width: 40%;
 }
 
 .experience_title {
@@ -190,11 +204,6 @@ img {
 .experience_summary {
     font-size: 1rem;
     margin-top: 1rem;
-}
-
-.skills_header {
-    margin: 0;
-    width: 50%;
 }
 
 .skills_content {
@@ -271,7 +280,57 @@ meter::-moz-meter-optimum::-moz-meter-bar {
     flex-direction: column;
     justify-content: space-around;
     margin: 0;
-    padding: 3.125rem 5%;
+    padding: 3.125rem 0;
     font-size: 1rem;
     width: 100%;
 }
+
+ @media screen and (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+    .header {
+        margin: 0 0 1.25rem 0;
+    }
+    .content {
+        margin: 0 0 1.25rem 0;
+    }
+    .experience {
+        margin: 0 0 1.25rem 0.25rem;
+    }
+    .experience_date_header {
+        font-size: 1.25rem;
+    }
+    .experience_title {
+        font-size: 1.25rem;
+    }
+    .experience_summary {
+        font-size: 1rem;
+    }
+    .skills_content {
+        margin: 0 0 1.25rem 0;
+    }
+    .skill {
+        margin: 0 0 0.5rem 0;
+    }
+    .skill span {
+        margin-left: 0;
+        text-align: left;
+    }
+    .education_header {
+        margin: 0 0 0.5rem 0;
+    }
+    .education_content {
+        flex-direction: column;
+    }
+    .education_content ul {
+        margin: 0 0 0.5rem 0;
+    }
+    .education_content li {
+        margin: 0.5em 0;
+        font-size: 1rem;
+    }
+    .footer {
+        padding: 1.25rem 0;
+    }
+ }
