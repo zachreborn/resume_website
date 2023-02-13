@@ -56,28 +56,67 @@ header {
 
 .navbar {
     display: flex;
-    align-items: center;
-    justify-content: space-between;
+    max-height: 0;
+    position: fixed;
+    overflow: hidden;
+    transition: max-height .5s ease-out;
+    top: 2.8125rem;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+/* Hamburger Menu */
+
+.hamburger_line {
+    background: #ECEFF1;
+    height: 0.125rem;
+    width: 1.5rem;
+    display: block;
     position: relative;
 }
 
-.navbar_links {
+.hamburger_line::before, .hamburger_line::after {
+    background: #ECEFF1;
+    content: '';
+    display: block;
+    height: 100%;
+    width: 100%;
+    transition: all 0.3s ease-in-out;
+    position: absolute;
+}
+
+.hamburger_line::before {
+    top: 0.3125rem;
+}
+
+.hamburger_line::after {
+    top: -0.3125rem;
+}
+
+/* Menu */
+
+.menu {
+    align-content: flex-start;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     list-style: none;
+    padding: 1rem 0;
 }
 
-.navbar_links li {
-    display: inline-block;
-    padding: 0 1.25rem;
+.menu li {
+    padding: 1rem 1.25rem;
 }
 
-.navbar_links li a {
+.menu li a {
+    display: block;
     font-size: 1.5rem;
     color: #ECEFF1;
     text-decoration: none;
-    position: relative;
 }
 
-.navbar_links li a::after{
+.menu li a::after{
     content: '';
     height: 0.125rem;
     width: 0%;
@@ -89,13 +128,70 @@ header {
     text-decoration: none;
 }
 
-.navbar_links li a:hover::after{
+.menu li a:hover::after{
     width: 100%;
 }
 
-.navbar_links li a.active::after{
+.menu li a.active::after{
     width: 100%;
 }
+
+.menu .item {
+    width: 100%;
+}
+
+/* Hide the checkbox */
+
+.menu_button {
+    display: none;
+}
+
+/* Toggle menu icon */
+.menu_button:checked ~ .navbar {
+    max-height: 100%;
+}
+
+.menu_button:checked ~ .hamburger .hamburger_line {
+    background: transparent;
+}
+
+.menu_button:checked ~ .hamburger .hamburger_line::before {
+    transform: rotate(-45deg);
+    top:0;
+}
+
+.menu_button:checked ~ .hamburger .hamburger_line::after {
+    transform: rotate(45deg);
+    top:0;
+}
+
+/* Responsive Menu - Hides the hamburger menu on larger screens */
+@media screen and (min-width: 768px) {
+    .navbar {
+        max-height: none;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        position: relative;
+        top: initial;
+        flex-direction: row;
+    }
+
+    .hamburger {
+        cursor: pointer;
+        display: none;
+    }
+
+    .menu li {
+        display: inline-block;
+        padding: 0 1.25rem;
+    }
+
+    .menu .item {
+        width: auto;
+    }
+}
+
 
 .greetings {
     align-items: center;
@@ -130,18 +226,14 @@ header {
 
 #headshot_image{
     height: auto;
-    
     border: 0.125rem solid #80CBC4;
     border-radius: 5%;
-    min-width: 40%;
-    max-width: 60%;
 }
 
 img {
-    min-width: 40%;
-    max-width: 60%;
+    min-width: 30%;
+    max-width: 50%;
     height: auto;
-    
     border: 0.125rem solid #80CBC4;
     border-radius: 5%;
 }
@@ -285,51 +377,72 @@ meter::-moz-meter-optimum::-moz-meter-bar {
     width: 100%;
 }
 
+/* Responsive Webpage Sizing */
+
  @media screen and (max-width: 768px) {
     .container {
         flex-direction: column;
     }
+
     .header {
         margin: 0 0 1.25rem 0;
     }
+
+    img {
+        min-width: 50%;
+        max-width: 80%;
+    }
+
     .content {
         margin: 0 0 1.25rem 0;
     }
+
     .experience {
         margin: 0 0 1.25rem 0.25rem;
     }
+
     .experience_date_header {
         font-size: 1.25rem;
     }
+
     .experience_title {
         font-size: 1.25rem;
     }
+
     .experience_summary {
         font-size: 1rem;
     }
+
     .skills_content {
         margin: 0 0 1.25rem 0;
     }
+
     .skill {
         margin: 0 0 0.5rem 0;
     }
+
     .skill span {
         margin-left: 0;
         text-align: left;
     }
+
     .education_header {
         margin: 0 0 0.5rem 0;
     }
+
     .education_content {
         flex-direction: column;
     }
+
     .education_content ul {
         margin: 0 0 0.5rem 0;
     }
+
     .education_content li {
         margin: 0.5em 0;
         font-size: 1rem;
     }
+    
     .footer {
         padding: 1.25rem 0;
     }
