@@ -3,7 +3,6 @@ on:
   push:
     branches:
     - main
-  pull_request:
 
 jobs:
   deploy:
@@ -15,9 +14,6 @@ jobs:
           path: ${{ github.repository }}
 
       - name: Echo directory
-        run: ls -la
-        
-      - name: Echo sub-directory
         run: ls -lha ${{ github.repository }}
 
       - name: Log event name
