@@ -1,12 +1,12 @@
-name: Website CI/CD
+name: Prod - Website CI/CD
 on:
   push:
     branches:
     - main
 
 jobs:
-  production_deploy:
-    name: 'Production Website Deploy'
+  prod_deploy:
+    name: 'Prod Website Deploy'
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
