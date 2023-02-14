@@ -44,8 +44,18 @@
             </nav>
         </header>
         <!-- Content-->
-        <div class="contact_form"></div>
-        <div class="link_tree">
+        <div class="contact_form content">
+            <h1>Contact Me</h1>
+            <form action="mailto:zhill@zacharyhill.co>" method="post" enctype="text/plain">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" placeholder="Your name..">
+                <label for="email">Email</label>
+                <input type="text" id="email" name="email" placeholder="Your email..">
+                <label for="subject">Subject</label>
+                <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+                <input type="submit" value="Submit">
+        </div>
+        <div class="link_tree content">
             <h4>My Links</h4>
             <p>LinkedIn</p>
             <!-- LinkedIn Icon and Link -->
