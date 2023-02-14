@@ -12,11 +12,11 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v3
 
-      - name: Test environment
-        run: echo "This is the ${{ github.event_name }} event for branch ${{ github.ref }}"
+      - name: Echo directory
+        run: ls -la
 
-      - name: Echo AWS Region
-        run: echo "AWS Region is ${{ vars.AWS_PROD_REGION }}"
+      - name: Log event name
+        run: echo "This is the ${{ github.event_name }} event for branch ${{ github.ref }}"
 
       - name: Configure AWS Credentials
         uses: aws-actions/configure-aws-credentials@v1
