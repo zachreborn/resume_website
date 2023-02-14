@@ -16,7 +16,7 @@ jobs:
         run: echo "This is the ${{ github.event_name }} event for branch ${{ github.ref }}"
 
       - name: Echo AWS Region
-        run: echo "AWS Region is ${{ env.AWS_PROD_REGION }}"
+        run: echo "AWS Region is $AWS_PROD_REGION
 
       - name: Configure AWS Credentials
         uses: aws-actions/configure-aws-credentials@v1
