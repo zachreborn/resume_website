@@ -1,15 +1,16 @@
-name: Dev - Website CI/CD
+---
+name: Deploy
 on:
   push:
     branches:
-    - 'dev_*'
-    - 'dev/*'
-    - 'development'
-    - 'dev-*'
-    - '!main'
-    - '!master'
-    - '!production'
-    - '!prod'
+      - 'dev_*'
+      - 'dev/*'
+      - 'development'
+      - 'dev-*'
+      - '!main'
+      - '!master'
+      - '!production'
+      - '!prod'
     
 
 jobs:

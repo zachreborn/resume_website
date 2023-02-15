@@ -1,8 +1,9 @@
-name: Prod - Website CI/CD
+---
+name: Deploy
 on:
   push:
     branches:
-    - main
+      - main
 
 jobs:
   prod_deploy:
@@ -29,3 +30,6 @@ jobs:
         
       - name: Deploy to S3
         run: aws s3 sync ./${{ github.repository }} s3://${{ vars.AWS_PROD_BUCKET_NAME }} --delete --exclude ".git/*" --exclude ".github/*"
+
+      - name: Invalidate CloudFront Cache
+        run: aws cloudfront create-invalidation --distribution-id ${{ vars.AWS_PROD_CLOUDFRONT_DISTRIBUTION_ID }} --paths "/*"
