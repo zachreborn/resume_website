@@ -263,6 +263,18 @@ img {
   width: 98%;
 }
 
+.center {
+  justify-content: center;
+}
+
+.left {
+  justify-content: flex-start;
+}
+
+.right {
+  justify-content: flex-end;
+}
+
 .header {
   margin-right: 5%;
   min-width: 14%;
