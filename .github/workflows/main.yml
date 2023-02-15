@@ -1,3 +1,4 @@
+---
 name: Prod - Website CI/CD
 on:
   push:

@@ -1,3 +1,4 @@
+---
 name: Dev - Website CI/CD
 on:
   push:
