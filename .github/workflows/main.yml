@@ -3,7 +3,7 @@ name: Prod - Website CI/CD
 on:
   push:
     branches:
-    - main
+      - main
 
 jobs:
   prod_deploy:
