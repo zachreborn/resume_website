@@ -1,7 +1,7 @@
 * {
   background-color: #263238;
   box-sizing: border-box;
-  color: #ECEFF1;
+  color: #eceff1;
   font-family: 'Fira Sans', sans-serif;
   font-weight: 100;
   margin: 0;
@@ -9,7 +9,7 @@
 }
 
 h1 {
-  color: #ECEFF1;
+  color: #eceff1;
   font-size: 2.5rem;
   font-weight: 300;
 }
@@ -23,27 +23,27 @@ h2 {
 h3 {
   font-size: 1.75rem;
   font-weight: 200;
-  color: #ECEFF1;
+  color: #eceff1;
 }
 
 h4 {
   font-size: 1.5rem;
   margin-bottom: 0.5rem;
   margin-top: 2.5rem;
-  color: #80CBC4;
+  color: #80cbc4;
 }
 
 h5,
 h6 {
   font-size: 1.125rem;
   font-weight: 200;
-  color: #ECEFF1;
+  color: #eceff1;
 }
 
 p {
   font-size: 1.125rem;
   font-weight: 200;
-  color: #ECEFF1;
+  color: #eceff1;
   margin-top: 0.25rem;
 }
 
@@ -54,12 +54,12 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 2% 2% 1% 2%;
-  border-bottom: 0.0125rem solid #ECEFF1;
+  padding: 2% 2% 1%;
+  border-bottom: 0.0125rem solid #eceff1;
 }
 
 .logo {
-  color: #ECEFF1;
+  color: #eceff1;
   cursor: pointer;
   display: flex;
   font-size: 1.75rem;
@@ -73,7 +73,7 @@ header {
   max-height: 0;
   position: fixed;
   overflow: hidden;
-  transition: max-height .5s ease-out;
+  transition: max-height 0.5s ease-out;
   top: 2.8125rem;
   left: 0;
   right: 0;
@@ -83,7 +83,7 @@ header {
 /* Hamburger Menu */
 
 .hamburger-line {
-  background: #ECEFF1;
+  background: #eceff1;
   height: 0.125rem;
   width: 1.5rem;
   display: block;
@@ -92,8 +92,8 @@ header {
 
 .hamburger-line::before,
 .hamburger-line::after {
-  background: #ECEFF1;
-  content: '';
+  background: #eceff1;
+  content: "";
   display: block;
   height: 100%;
   width: 100%;
@@ -127,15 +127,15 @@ header {
 .menu li a {
   display: block;
   font-size: 1.5rem;
-  color: #ECEFF1;
+  color: #eceff1;
   text-decoration: none;
 }
 
 .menu li a::after {
-  content: '';
+  content: "";
   height: 0.125rem;
   width: 0%;
-  background: #80CBC4;
+  background: #80cbc4;
   position: absolute;
   left: 0;
   bottom: -0.3125rem;
@@ -211,7 +211,7 @@ header {
 .greetings {
   align-items: center;
   background-color: #263238;
-  color: #ECEFF1;
+  color: #eceff1;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -234,12 +234,12 @@ header {
 .greetings-emphasis {
   font-weight: 300;
   font-size: 120%;
-  color: #80CBC4;
+  color: #80cbc4;
 }
 
 #headshot-image {
   height: auto;
-  border: 0.125rem solid #80CBC4;
+  border: 0.125rem solid #80cbc4;
   border-radius: 5%;
 }
 
@@ -247,7 +247,7 @@ img {
   min-width: 30%;
   max-width: 50%;
   height: auto;
-  border: 0.125rem solid #80CBC4;
+  border: 0.125rem solid #80cbc4;
   border-radius: 5%;
 }
 
@@ -286,7 +286,7 @@ img {
   font-size: 1.5rem;
   margin-bottom: 0.5rem;
   margin-top: 2.5rem;
-  color: #80CBC4;
+  color: #80cbc4;
 }
 
 .experience.content {
@@ -337,23 +337,23 @@ meter {
 /* Webkit meter */
 meter::-webkit-meter-bar {
   background: none;
-  background-color: #ECEFF180;
+  background-color: #eceff180;
   border-radius: 0.125rem;
 }
 
 meter::-webkit-meter-optimum-value {
-  background-color: #80CBC4;
+  background-color: #80cbc4;
 }
 
 /* Firefox meter */
 meter::-moz-meter-bar {
   background: none;
-  background-color: #ECEFF180;
+  background-color: #eceff180;
   border-radius: 0.125rem;
 }
 
 meter::-moz-meter-optimum::-moz-meter-bar {
-  background-color: #80CBC4;
+  background-color: #80cbc4;
 }
 
 .education_header {
