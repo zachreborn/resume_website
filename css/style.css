@@ -2,7 +2,7 @@
   background-color: #263238;
   box-sizing: border-box;
   color: #eceff1;
-  font-family: 'Fira Sans', sans-serif;
+  font-family: "Fira Sans", sans-serif;
   font-weight: 100;
   margin: 0;
   padding: 0;
@@ -162,20 +162,20 @@ header {
 }
 
 /* Toggle menu icon */
-.menu-button:checked~.navbar {
+.menu-button:checked ~ .navbar {
   max-height: 100%;
 }
 
-.menu-button:checked~.hamburger .hamburger-line {
+.menu-button:checked ~ .hamburger .hamburger-line {
   background: transparent;
 }
 
-.menu-button:checked~.hamburger .hamburger-line::before {
+.menu-button:checked ~ .hamburger .hamburger-line::before {
   transform: rotate(-45deg);
   top: 0;
 }
 
-.menu-button:checked~.hamburger .hamburger-line::after {
+.menu-button:checked ~ .hamburger .hamburger-line::after {
   transform: rotate(45deg);
   top: 0;
 }
@@ -206,7 +206,6 @@ header {
     width: auto;
   }
 }
-
 
 .greetings {
   align-items: center;
@@ -254,7 +253,7 @@ img {
 .descriptors {
   font-weight: 100;
   text-align: left;
-  margin: 0 0 0.5em 0;
+  margin: 0 0 0.5em;
 }
 
 .container {
@@ -312,14 +311,14 @@ img {
 }
 
 .skills-content {
-  padding: 0rem;
+  padding: 0;
 }
 
 .skill {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  margin: 0.5rem 0 0 0;
+  margin: 0.5rem 0 0;
 }
 
 .skill span {
@@ -356,7 +355,7 @@ meter::-moz-meter-optimum::-moz-meter-bar {
   background-color: #80cbc4;
 }
 
-.education_header {
+.education-header {
   margin: 0;
   width: 50%;
 }
@@ -398,7 +397,7 @@ meter::-moz-meter-optimum::-moz-meter-bar {
   }
 
   .header {
-    margin: 0 0 1.25rem 0;
+    margin: 0 0 1.25rem;
   }
 
   img {
@@ -407,7 +406,7 @@ meter::-moz-meter-optimum::-moz-meter-bar {
   }
 
   .content {
-    margin: 0 0 1.25rem 0;
+    margin: 0 0 1.25rem;
   }
 
   .experience {
@@ -427,11 +426,11 @@ meter::-moz-meter-optimum::-moz-meter-bar {
   }
 
   .skills-content {
-    margin: 0 0 1.25rem 0;
+    margin: 0 0 1.25rem;
   }
 
   .skill {
-    margin: 0 0 0.5rem 0;
+    margin: 0 0 0.5rem;
   }
 
   .skill span {
@@ -439,8 +438,8 @@ meter::-moz-meter-optimum::-moz-meter-bar {
     text-align: left;
   }
 
-  .education_header {
-    margin: 0 0 0.5rem 0;
+  .education-header {
+    margin: 0 0 0.5rem;
   }
 
   .education-content {
@@ -448,7 +447,7 @@ meter::-moz-meter-optimum::-moz-meter-bar {
   }
 
   .education-content ul {
-    margin: 0 0 0.5rem 0;
+    margin: 0 0 0.5rem;
   }
 
   .education-content li {
