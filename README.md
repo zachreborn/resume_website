@@ -1,2 +1,2 @@
 # resume_website
-Keep an up to date resume which captures my philosphy, career, skills, projects, and accolades.
+An up to date resume which captures my philosphy, career, skills, projects, and accolades in a meaningful way. Allows recruiters, hiring managers, and leadership team's to see who I am at a quick glance or read through.
