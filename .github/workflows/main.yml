@@ -1,5 +1,5 @@
 ---
-name: Prod - Website CI/CD
+name: Deploy
 on:
   push:
     branches:
