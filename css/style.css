@@ -33,7 +33,8 @@ h4 {
   color: #80CBC4;
 }
 
-h5, h6 {
+h5,
+h6 {
   font-size: 1.125rem;
   font-weight: 200;
   color: #ECEFF1;
@@ -89,7 +90,8 @@ header {
   position: relative;
 }
 
-.hamburger-line::before, .hamburger-line::after {
+.hamburger-line::before,
+.hamburger-line::after {
   background: #ECEFF1;
   content: '';
   display: block;
@@ -129,7 +131,7 @@ header {
   text-decoration: none;
 }
 
-.menu li a::after{
+.menu li a::after {
   content: '';
   height: 0.125rem;
   width: 0%;
@@ -141,11 +143,11 @@ header {
   text-decoration: none;
 }
 
-.menu li a:hover::after{
+.menu li a:hover::after {
   width: 100%;
 }
 
-.menu li a.active::after{
+.menu li a.active::after {
   width: 100%;
 }
 
@@ -160,48 +162,48 @@ header {
 }
 
 /* Toggle menu icon */
-.menu-button:checked ~ .navbar {
+.menu-button:checked~.navbar {
   max-height: 100%;
 }
 
-.menu-button:checked ~ .hamburger .hamburger-line {
+.menu-button:checked~.hamburger .hamburger-line {
   background: transparent;
 }
 
-.menu-button:checked ~ .hamburger .hamburger-line::before {
+.menu-button:checked~.hamburger .hamburger-line::before {
   transform: rotate(-45deg);
-  top:0;
+  top: 0;
 }
 
-.menu-button:checked ~ .hamburger .hamburger-line::after {
+.menu-button:checked~.hamburger .hamburger-line::after {
   transform: rotate(45deg);
-  top:0;
+  top: 0;
 }
 
 /* Responsive Menu - Hides the hamburger menu on larger screens */
 @media screen and (min-width: 768px) {
   .navbar {
-      max-height: none;
-      align-items: center;
-      justify-content: space-between;
-      flex-wrap: wrap;
-      position: relative;
-      top: initial;
-      flex-direction: row;
+    max-height: none;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    position: relative;
+    top: initial;
+    flex-direction: row;
   }
 
   .hamburger {
-      cursor: pointer;
-      display: none;
+    cursor: pointer;
+    display: none;
   }
 
   .menu li {
-      display: inline-block;
-      padding: 0 1.25rem;
+    display: inline-block;
+    padding: 0 1.25rem;
   }
 
   .menu .item {
-      width: auto;
+    width: auto;
   }
 }
 
@@ -232,10 +234,10 @@ header {
 .greetings-emphasis {
   font-weight: 300;
   font-size: 120%;
-  color:#80CBC4;
+  color: #80CBC4;
 }
 
-#headshot-image{
+#headshot-image {
   height: auto;
   border: 0.125rem solid #80CBC4;
   border-radius: 5%;
@@ -390,71 +392,71 @@ meter::-moz-meter-optimum::-moz-meter-bar {
 
 /* Responsive Webpage Sizing */
 
- @media screen and (max-width: 768px) {
+@media screen and (max-width: 768px) {
   .container {
-      flex-direction: column;
+    flex-direction: column;
   }
 
   .header {
-      margin: 0 0 1.25rem 0;
+    margin: 0 0 1.25rem 0;
   }
 
   img {
-      min-width: 50%;
-      max-width: 80%;
+    min-width: 50%;
+    max-width: 80%;
   }
 
   .content {
-      margin: 0 0 1.25rem 0;
+    margin: 0 0 1.25rem 0;
   }
 
   .experience {
-      margin: 0 0 1.25rem 0.25rem;
+    margin: 0 0 1.25rem 0.25rem;
   }
 
   .experience-date-header {
-      font-size: 1.25rem;
+    font-size: 1.25rem;
   }
 
   .experience-title {
-      font-size: 1.25rem;
+    font-size: 1.25rem;
   }
 
   .experience-summary {
-      font-size: 1rem;
+    font-size: 1rem;
   }
 
   .skills-content {
-      margin: 0 0 1.25rem 0;
+    margin: 0 0 1.25rem 0;
   }
 
   .skill {
-      margin: 0 0 0.5rem 0;
+    margin: 0 0 0.5rem 0;
   }
 
   .skill span {
-      margin-left: 0;
-      text-align: left;
+    margin-left: 0;
+    text-align: left;
   }
 
   .education_header {
-      margin: 0 0 0.5rem 0;
+    margin: 0 0 0.5rem 0;
   }
 
   .education-content {
-      flex-direction: column;
+    flex-direction: column;
   }
 
   .education-content ul {
-      margin: 0 0 0.5rem 0;
+    margin: 0 0 0.5rem 0;
   }
 
   .education-content li {
-      margin: 0.5em 0;
-      font-size: 1rem;
+    margin: 0.5em 0;
+    font-size: 1rem;
   }
-  
+
   .footer {
-      padding: 1.25rem 0;
+    padding: 1.25rem 0;
   }
- }
+}
