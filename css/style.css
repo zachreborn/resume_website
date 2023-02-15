@@ -186,10 +186,9 @@ header {
     max-height: none;
     align-items: center;
     justify-content: space-between;
-    flex-wrap: wrap;
     position: relative;
     top: initial;
-    flex-direction: row;
+    flex-flow: row wrap;
   }
 
   .hamburger {
@@ -277,8 +276,7 @@ img {
 
 .timeline-container {
   display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
+  flex-flow: row wrap;
 }
 
 .experience-date-header {
