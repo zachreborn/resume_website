@@ -155,25 +155,25 @@ header {
 
 /* Hide the checkbox */
 
-.menu_button {
+.menu-button {
     display: none;
 }
 
 /* Toggle menu icon */
-.menu_button:checked ~ .navbar {
+.menu-button:checked ~ .navbar {
     max-height: 100%;
 }
 
-.menu_button:checked ~ .hamburger .hamburger_line {
+.menu-button:checked ~ .hamburger .hamburger_line {
     background: transparent;
 }
 
-.menu_button:checked ~ .hamburger .hamburger_line::before {
+.menu-button:checked ~ .hamburger .hamburger_line::before {
     transform: rotate(-45deg);
     top:0;
 }
 
-.menu_button:checked ~ .hamburger .hamburger_line::after {
+.menu-button:checked ~ .hamburger .hamburger_line::after {
     transform: rotate(45deg);
     top:0;
 }
@@ -235,7 +235,7 @@ header {
     color:#80CBC4;
 }
 
-#headshot_image{
+#headshot-image{
     height: auto;
     border: 0.125rem solid #80CBC4;
     border-radius: 5%;
