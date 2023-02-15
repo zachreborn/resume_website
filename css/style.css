@@ -215,16 +215,16 @@ header {
     justify-content: space-between;
 }
 
-.greetings_text h1 {
+.greetings-text h1 {
     font-size: 2.5rem;
     margin: 0 1.5rem;
 }
 
-.greetings_text h2 {
+.greetings-text h2 {
     margin: 0.5rem 1.5rem;
 }
 
-.greetings_text p {
+.greetings-text p {
     font-size: 1.5rem;
     margin: 0.5rem 1.5rem;
 }
@@ -274,13 +274,13 @@ img {
     font-weight: 200;
 }
 
-.test_container {
+.timeline-container {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
 }
 
-.experience_date_header {
+.experience-date-header {
     font-size: 1.5rem;
     margin-bottom: 0.5rem;
     margin-top: 2.5rem;
@@ -299,17 +299,17 @@ img {
     max-width: 90%;
 }
 
-.experience_title {
+.experience-title {
     margin-top: 0.5rem;
     color: #ff479c;
 }
 
-.experience_summary {
+.experience-summary {
     font-size: 1rem;
     margin-top: 1rem;
 }
 
-.skills_content {
+.skills-content {
     padding: 0rem;
 }
 
@@ -359,18 +359,18 @@ meter::-moz-meter-optimum::-moz-meter-bar {
     width: 50%;
 }
 
-.education_content {
+.education-content {
     padding: 1.5rem;
     display: flex;
     flex-direction: row;
     list-style: none;
 }
 
-.education_content ul {
+.education-content ul {
     list-style: square;
 }
 
-.education_content li {
+.education-content li {
     margin: 0.5em 0;
     font-size: 1.2rem;
     font-weight: 200;
@@ -412,19 +412,19 @@ meter::-moz-meter-optimum::-moz-meter-bar {
         margin: 0 0 1.25rem 0.25rem;
     }
 
-    .experience_date_header {
+    .experience-date-header {
         font-size: 1.25rem;
     }
 
-    .experience_title {
+    .experience-title {
         font-size: 1.25rem;
     }
 
-    .experience_summary {
+    .experience-summary {
         font-size: 1rem;
     }
 
-    .skills_content {
+    .skills-content {
         margin: 0 0 1.25rem 0;
     }
 
@@ -441,15 +441,15 @@ meter::-moz-meter-optimum::-moz-meter-bar {
         margin: 0 0 0.5rem 0;
     }
 
-    .education_content {
+    .education-content {
         flex-direction: column;
     }
 
-    .education_content ul {
+    .education-content ul {
         margin: 0 0 0.5rem 0;
     }
 
-    .education_content li {
+    .education-content li {
         margin: 0.5em 0;
         font-size: 1rem;
     }
