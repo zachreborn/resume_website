@@ -4,7 +4,7 @@
 ## Super Linter GitHub Actions ##
 #################################
 #################################
-name: Lint
+name: Linter
 
 #############################
 # Start the job on all push #
@@ -17,7 +17,7 @@ on:
 
 jobs:
   build:
-    name: Lint
+    name: Linter
     runs-on: ubuntu-latest
     steps:
       ##########################
@@ -33,7 +33,7 @@ jobs:
       ################################
       # Run Linter against code base #
       ################################
-      - name: Lint
+      - name: Linter
         uses: github/super-linter/slim@v4
         env:
           VALIDATE_ALL_CODEBASE: false
