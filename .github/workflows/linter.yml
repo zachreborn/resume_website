@@ -26,6 +26,8 @@ jobs:
       - name: Checkout Code
         uses: actions/checkout@v3
         
+      - name: Echo directory
+        run: ls -lha
 
       ################################
       # Run Linter against code base #
