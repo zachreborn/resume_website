@@ -458,3 +458,7 @@ meter::-moz-meter-optimum::-moz-meter-bar {
         padding: 1.25rem 0;
     }
  }
+
+.test {
+    display flex;
+}
