@@ -387,6 +387,12 @@ meter::-moz-meter-optimum::-moz-meter-bar {
   font-weight: 200;
 }
 
+.photos {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+}
+
 .footer {
   align-items: center;
   background-color: #263238;
