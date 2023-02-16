@@ -259,7 +259,6 @@ img {
   align-items: center;
   display: flex;
   flex-direction: row;
-  justify-content: space-evenly;
   margin: 5.25rem 1rem;
   width: 98%;
 }
