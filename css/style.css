@@ -391,6 +391,7 @@ meter::-moz-meter-optimum::-moz-meter-bar {
   display: flex;
   flex-flow: row wrap;
   align-items: center;
+  margin: 1em 0;
 }
 
 .footer {
