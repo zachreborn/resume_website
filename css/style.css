@@ -263,6 +263,18 @@ img {
   width: 98%;
 }
 
+.center {
+  justify-content: center;
+}
+
+.left {
+  justify-content: flex-start;
+}
+
+.right {
+  justify-content: flex-end;
+}
+
 .header {
   margin-right: 5%;
   min-width: 14%;
@@ -373,6 +385,13 @@ meter::-moz-meter-optimum::-moz-meter-bar {
   margin: 0.5em 0;
   font-size: 1.2rem;
   font-weight: 200;
+}
+
+.photos {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  margin: 1em 0;
 }
 
 .footer {
