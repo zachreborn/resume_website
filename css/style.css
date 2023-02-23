@@ -240,6 +240,10 @@ header {
   max-height: 40em;
 }
 
+#topology-image {
+  max-width: 100%;
+}
+
 img {
   min-width: 30%;
   max-width: 50%;
