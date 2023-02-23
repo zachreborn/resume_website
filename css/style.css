@@ -236,9 +236,9 @@ header {
 }
 
 #headshot-image {
-  height: auto;
   border: 0.125rem solid #80cbc4;
   border-radius: 5%;
+  max-height: 40em;
 }
 
 img {
