@@ -2,20 +2,24 @@
 #################################
 ## Super Linter GitHub Actions ##
 #################################
-name: Linter
+name: Test
 
 on:
   pull_request:
-    branches: [master, main]
+    branches: 
+    - master
+    - main
+  push:
+    branches:
+    - master
+    - main
 
 jobs:
-  build:
+  test_linter:
     name: Linter
     runs-on: ubuntu-latest
     steps:
-      ##########################
-      # Checkout the code base #
-      ##########################
+
       - name: Checkout Code
         uses: actions/checkout@v3
         with:
@@ -23,12 +27,10 @@ jobs:
           # list of changed files within `super-linter`
           fetch-depth: 0
 
-      ################################
-      # Run Linter against code base #
-      ################################
       - name: Linter
         uses: github/super-linter/slim@v4
         env:
-          VALIDATE_ALL_CODEBASE: true
-          DEFAULT_BRANCH: master
+          DEFAULT_BRANCH: main
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          MULTI-STATUS: true
+          VALIDATE_ALL_CODEBASE: true
