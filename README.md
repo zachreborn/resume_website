@@ -18,7 +18,7 @@
 *** for contributors-url, forks-url, etc. This is an optional, concise syntax you may use.
 *** https://www.markdownguide.org/basic-syntax/#reference-style-links
 -->
-[![Deploy - Prod][workflow-build-shield]][workflow-build-url]
+[![Deployment][github-deployment-shield]][github-deployment-url]
 [![Contributors][contributors-shield]][contributors-url]
 [![Forks][forks-shield]][forks-url]
 [![Stargazers][stars-shield]][stars-url]
@@ -177,6 +177,8 @@ Project Link: [https://github.com/zachreborn/resume_website](https://github.com/
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
 [workflow-build-shield]: https://img.shields.io/github/actions/workflow/status/zachreborn/resume_website/main.yml?style=for-the-badge
 [workflow-build-url]: https://github.com/zachreborn/resume_website/actions/workflows/main.yml
+[github-deployment-shield]: https://img.shields.io/github/deployments/zachreborn/resume_website/prod?style=for-the-badge
+[github-deployment-url]: https://github.com/zachreborn/resume_website/deployments/activity_log?environment=prod
 [contributors-shield]: https://img.shields.io/github/contributors/zachreborn/resume_website.svg?style=for-the-badge
 [contributors-url]: https://github.com/zachreborn/resume_website/graphs/contributors
 [forks-shield]: https://img.shields.io/github/forks/zachreborn/resume_website.svg?style=for-the-badge
