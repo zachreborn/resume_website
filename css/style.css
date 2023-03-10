@@ -404,6 +404,18 @@ meter::-moz-meter-optimum::-moz-meter-bar {
   object-fit: cover;
 }
 
+.link-tree.content {
+  display: flex;
+  justify-content: space-between;
+}
+
+.icon-link {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  margin: 0.5rem 2rem;
+}
+
 .footer {
   align-items: center;
   background-color: #263238;
@@ -480,6 +492,14 @@ meter::-moz-meter-optimum::-moz-meter-bar {
   .education-content li {
     margin: 0.5em 0;
     font-size: 1rem;
+  }
+
+  .photos {
+    flex-direction: column;
+  }
+
+  .link-tree.content {
+    flex-direction: column;
   }
 
   .footer {
