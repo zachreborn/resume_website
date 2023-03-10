@@ -1,0 +1,36 @@
+---
+#################################
+## Super Linter GitHub Actions ##
+#################################
+name: Test
+
+on:
+  pull_request:
+    branches: 
+    - master
+    - main
+  push:
+    branches:
+    - master
+    - main
+
+jobs:
+  test_linter:
+    name: Linter
+    runs-on: ubuntu-latest
+    steps:
+
+      - name: Checkout Code
+        uses: actions/checkout@v3
+        with:
+          # Full git history is needed to get a proper
+          # list of changed files within `super-linter`
+          fetch-depth: 0
+
+      - name: Linter
+        uses: github/super-linter/slim@v4
+        env:
+          DEFAULT_BRANCH: main
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          MULTI-STATUS: true
+          VALIDATE_ALL_CODEBASE: true

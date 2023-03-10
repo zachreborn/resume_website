@@ -323,6 +323,10 @@ img {
   margin-top: 1rem;
 }
 
+.highlights ul {
+  margin-top: 2rem;
+}
+
 .skills-content {
   padding: 0;
 }
@@ -398,6 +402,18 @@ meter::-moz-meter-optimum::-moz-meter-bar {
 .photo {
   display: flex;
   object-fit: cover;
+}
+
+.link-tree.content {
+  display: flex;
+  justify-content: space-between;
+}
+
+.icon-link {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  margin: 1rem 2rem;
 }
 
 .footer {
@@ -476,6 +492,14 @@ meter::-moz-meter-optimum::-moz-meter-bar {
   .education-content li {
     margin: 0.5em 0;
     font-size: 1rem;
+  }
+
+  .photos {
+    flex-direction: column;
+  }
+
+  .link-tree.content {
+    flex-direction: column;
   }
 
   .footer {

@@ -38,25 +38,36 @@
             <nav class="navbar">
                 <ul class="menu">
                     <li class="item"><a href="index.html">Home</a></li>
-                    <li class="item"><a href="about.html">About</a></li>
+                    <li class="item"><a href="index.html#about-me">About</a></li>
                     <li class="item"><a href="contact.html">Contact</a></li>
                     <li class="item"><a href="architecture.html">About This Website</a></li>
                 </ul>
             </nav>
         </header>
         <!-- Content-->
+        <!-- About This Website -->
         <div class="container">
             <div class="header">
                 <h3><span class="dot">.</span>About This Website</h3>
             </div>
             <div class="content">
-                <p>This website was created using HTML and CSS entirely by me with a little help from GitHub Co-Pilot. The website is hosted on AWS. The repository for the website and the cloud environment are hosted on GitHub. The cloud environment was created using terraform. The website is deployed with GitHub Actions. The website itself is also responsive and works on mobile devices.</p>
-                <h4>Website Links</h4>
-                <ul>
-                    <li><a href="https://github.com/zachreborn/resume_website" target="_blank"><i class="fa-brands fa-github fa-2x"></i>https://github.com/zachreborn/resume_website</a></li>
-                </ul>
+                <p>This website was created using HTML and CSS entirely by me with a little help from GitHub CoPilot. The website is hosted on AWS utilizing Route53, CloudFront, and S3 services. The repositories for the website and the cloud environment are hosted on GitHub. The cloud environment was created and is maintained using terraform. The website is automatically deployed with GitHub Actions workflows. The website itself was built to be responsive and works on devices with all screen dimensions.</p>
             </div>
         </div>
+
+        <!-- Repository Links -->
+        <div class="repository-links container">
+            <div class="header">
+                <h3><span class="dot">.</span>Repository Links</h3>
+            </div>
+            <div class="content">
+                <div class="icon-link">
+                    <a href="https://github.com/zachreborn/resume_website" target="_blank"><i class="fa-brands fa-github fa-5x"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Topology -->
         <div class="container">
             <div class="header">
                 <h3><span class="dot">.</span>Topology</h3>
@@ -65,6 +76,7 @@
                 <img src="./media/images/zachary_hill_website_s3.png" alt="Website topology diagram" id="topology-image">
             </div>
         </div>
+        
         <!-- Footer Copyright-->
         <footer>
             <div class="footer">
