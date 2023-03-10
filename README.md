@@ -175,8 +175,8 @@ Project Link: [https://github.com/zachreborn/resume_website](https://github.com/
 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
-[workflow-build-shield]: https://img.shields.io/github/actions/workflow/status/zachreborn/resume_website/main.yml?style=for-the-badge
-[workflow-build-url]: https://github.com/zachreborn/resume_website/actions/workflows/main.yml
+<!-- [workflow-build-shield]: https://img.shields.io/github/actions/workflow/status/zachreborn/resume_website/main.yml?style=for-the-badge -->
+<!-- [workflow-build-url]: https://github.com/zachreborn/resume_website/actions/workflows/main.yml -->
 [github-deployment-shield]: https://img.shields.io/github/deployments/zachreborn/resume_website/prod?style=for-the-badge
 [github-deployment-url]: https://github.com/zachreborn/resume_website/deployments/activity_log?environment=prod
 [contributors-shield]: https://img.shields.io/github/contributors/zachreborn/resume_website.svg?style=for-the-badge
@@ -196,7 +196,6 @@ Project Link: [https://github.com/zachreborn/resume_website](https://github.com/
 [css]: https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white
 [aws.amazon.com]: https://img.shields.io/badge/AMAZONAWS-232F3E?style=for-the-badge&logo=amazonaws&logoColor=white
 [aws-url]: https://aws.amazon.com
-[docker-url]: https://docker.com
 [github.com]: https://img.shields.io/badge/Github-181717?style=for-the-badge&logo=github&logoColor=white
 [github-url]: https://github.com
 [docker.com]: https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white
