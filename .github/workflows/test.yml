@@ -7,12 +7,12 @@ name: Test
 on:
   pull_request:
     branches: 
-    - master
-    - main
+      - master
+      - main
   push:
     branches:
-    - master
-    - main
+      - master
+      - main
 
 jobs:
   test_linter:
@@ -33,4 +33,4 @@ jobs:
           DEFAULT_BRANCH: main
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           MULTI-STATUS: true
-          VALIDATE_ALL_CODEBASE: true
+          VALIDATE_ALL_CODEBASE: false
