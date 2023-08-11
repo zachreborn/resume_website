@@ -167,7 +167,7 @@ Project Link: [https://github.com/zachreborn/resume_website](https://github.com/
 <!-- ACKNOWLEDGMENTS -->
 ## Acknowledgments
 
-* [Zachary Hill](http://zacharhill.co)
+* [Zachary Hill](https://zacharyhill.co)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
