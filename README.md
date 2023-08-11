@@ -188,7 +188,7 @@ Project Link: [https://github.com/zachreborn/resume_website](https://github.com/
 [issues-shield]: https://img.shields.io/github/issues/zachreborn/resume_website.svg?style=for-the-badge
 [issues-url]: https://github.com/zachreborn/resume_website/issues
 [license-shield]: https://img.shields.io/github/license/zachreborn/resume_website.svg?style=for-the-badge
-[license-url]: https://github.com/zachreborn/resume_website/blob/master/LICENSE.txt
+[license-url]: https://github.com/zachreborn/resume_website/blob/master/LICENSE
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
 [linkedin-url]: https://www.linkedin.com/in/zachary-hill-1b1b5b1a0/
 [product-screenshot]: ./media/images/screenshot.png
