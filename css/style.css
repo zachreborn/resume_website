@@ -237,7 +237,7 @@ header {
 #headshot-image {
   border: 0.125rem solid #80cbc4;
   border-radius: 5%;
-  max-height: 40em;
+  /* max-height: 40em; Making the image stretch on wider displays */
 }
 
 #topology-image {
