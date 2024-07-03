@@ -2,16 +2,11 @@
 name: Deploy - Dev
 on:
   push:
-    branches:
-      - 'dev_*'
-      - 'dev/*'
-      - 'development'
-      - 'dev-*'
-      - '!main'
-      - '!master'
-      - '!production'
-      - '!prod'
-    
+    branches-ignore:
+      - main
+      - master
+      - production
+      - prod
 
 jobs:
   dev_deploy:
