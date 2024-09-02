@@ -21,14 +21,14 @@ jobs:
     steps:
 
       - name: Checkout Code
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
         with:
           # Full git history is needed to get a proper
           # list of changed files within `super-linter`
           fetch-depth: 0
 
       - name: Linter
-        uses: github/super-linter/slim@v4
+        uses: super-linter/super-linter@v6.8.0
         env:
           DEFAULT_BRANCH: main
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
