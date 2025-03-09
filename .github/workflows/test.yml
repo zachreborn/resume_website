@@ -6,7 +6,7 @@ name: Test
 
 on:
   pull_request:
-    branches: 
+    branches:
       - master
       - main
   push:
@@ -14,12 +14,20 @@ on:
       - master
       - main
 
+permissions: {}
+
 jobs:
   test_linter:
     name: Linter
     runs-on: ubuntu-latest
-    steps:
 
+    permissions:
+      contents: read
+      packages: read
+      # To report GitHub Actions status checks
+      statuses: write
+
+    steps:
       - name: Checkout Code
         uses: actions/checkout@v4
         with:
@@ -27,10 +35,10 @@ jobs:
           # list of changed files within `super-linter`
           fetch-depth: 0
 
-      - name: Linter
-        uses: super-linter/super-linter@v6.8.0
+      # Run Linter against code base
+      - name: Run linter against all changed files
+        uses: super-linter/super-linter@v7
         env:
-          DEFAULT_BRANCH: main
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          MULTI-STATUS: true
+          MULTI_STATUS: true
           VALIDATE_ALL_CODEBASE: false
