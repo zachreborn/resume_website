@@ -1,5 +1,7 @@
 <!-- Improved compatibility of back to top link: See: https://github.com/othneildrew/Best-README-Template/pull/73 -->
+
 <a name="readme-top"></a>
+
 <!--
 *** Thanks for checking out the Best-README-Template. If you have a suggestion
 *** that would make this better, please fork the repo and create a pull request
@@ -7,8 +9,6 @@
 *** Don't forget to give the project a star!
 *** Thanks again! Now go create something AMAZING! :D
 -->
-
-
 
 <!-- PROJECT SHIELDS -->
 <!--
@@ -18,6 +18,7 @@
 *** for contributors-url, forks-url, etc. This is an optional, concise syntax you may use.
 *** https://www.markdownguide.org/basic-syntax/#reference-style-links
 -->
+
 [![Deployment][github-deployment-shield]][github-deployment-url]
 [![Contributors][contributors-shield]][contributors-url]
 [![Forks][forks-shield]][forks-url]
@@ -25,8 +26,6 @@
 [![Issues][issues-shield]][issues-url]
 [![MIT License][license-shield]][license-url]
 [![LinkedIn][linkedin-shield]][linkedin-url]
-
-
 
 <!-- PROJECT LOGO -->
 <br />
@@ -50,8 +49,6 @@
     <a href="https://github.com/zachreborn/resume_website/issues">Request Feature</a>
   </p>
 </div>
-
-
 
 <!-- TABLE OF CONTENTS -->
 <details>
@@ -77,32 +74,26 @@
   </ol>
 </details>
 
-
-
 <!-- ABOUT THE PROJECT -->
+
 ## About The Project
 
 [![Product Name Screen Shot][product-screenshot]](https://zacharhill.co)
 
-
-
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-
 
 ### Built With
 
-* ![HTML]
-* ![CSS]
-* [![GitHub Co-Pilot][github.com]][github-url]
-* [![AMAZONAWS][aws.amazon.com]][aws-url]
-* [![Docker][docker.com]][docker-url]
+- ![HTML]
+- ![CSS]
+- [![GitHub Co-Pilot][github.com]][github-url]
+- [![AMAZONAWS][aws.amazon.com]][aws-url]
+- [![Docker][docker.com]][docker-url]
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-
-
 <!-- GETTING STARTED -->
+
 ## Getting Started
 
 To get a local copy up and running follow these simple example steps.
@@ -110,7 +101,8 @@ To get a local copy up and running follow these simple example steps.
 ### Prerequisites
 
 This is an example of how to list things you need to use the software and how to install them.
-* Docker
+
+- Docker
   ```sh
   sudo apt install docker
   ```
@@ -123,37 +115,33 @@ This is an example of how to list things you need to use the software and how to
    ```
 2. Build docker container image
    ```sh
-   docker build -t resume_website 
+   docker build -t resume_website
    ```
 3. Run docker container
-    ```sh
-    docker run -dp 80:80 resume_website
-    ```
-
+   ```sh
+   docker run -dp 80:80 resume_website
+   ```
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-
-
 <!-- USAGE EXAMPLES -->
-## Usage
 
+## Usage
 
 _For more examples, please refer to the [Documentation](https://zacharyhill.co)_
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-
 <!-- LICENSE -->
+
 ## License
 
 Distributed under the MIT License. See `LICENSE.txt` for more information.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-
-
 <!-- CONTACT -->
+
 ## Contact
 
 Zachary Hill - [![LinkedIn][linkedin-shield]][linkedin-url] - zhill@zacharyhill.co
@@ -162,21 +150,19 @@ Project Link: [https://github.com/zachreborn/resume_website](https://github.com/
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-
-
 <!-- ACKNOWLEDGMENTS -->
+
 ## Acknowledgments
 
-* [Zachary Hill](https://zacharyhill.co)
+- [Zachary Hill](https://zacharyhill.co)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-
 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
 <!-- [workflow-build-shield]: https://img.shields.io/github/actions/workflow/status/zachreborn/resume_website/main.yml?style=for-the-badge -->
 <!-- [workflow-build-url]: https://github.com/zachreborn/resume_website/actions/workflows/main.yml -->
+
 [github-deployment-shield]: https://img.shields.io/github/deployments/zachreborn/resume_website/prod?style=for-the-badge
 [github-deployment-url]: https://github.com/zachreborn/resume_website/deployments/activity_log?environment=prod
 [contributors-shield]: https://img.shields.io/github/contributors/zachreborn/resume_website.svg?style=for-the-badge
@@ -190,7 +176,7 @@ Project Link: [https://github.com/zachreborn/resume_website](https://github.com/
 [license-shield]: https://img.shields.io/github/license/zachreborn/resume_website.svg?style=for-the-badge
 [license-url]: https://github.com/zachreborn/resume_website/blob/master/LICENSE
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
-[linkedin-url]: https://www.linkedin.com/in/zachary-hill-1b1b5b1a0/
+[linkedin-url]: https://www.linkedin.com/in/zachary-hill-5524257a/
 [product-screenshot]: ./media/images/screenshot.png
 [html]: https://img.shields.io/badge/HTML-E34F26?style=for-the-badge&logo=html5&logoColor=white
 [css]: https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white
