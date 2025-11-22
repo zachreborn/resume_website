@@ -9,6 +9,7 @@ Resume website is a static HTML/CSS portfolio and resume site deployed to AWS S3
 ## Architecture
 
 **Tech Stack:**
+
 - HTML5 for markup
 - CSS3 for styling (custom stylesheet in `css/style.css`)
 - Google Analytics for tracking
@@ -18,6 +19,7 @@ Resume website is a static HTML/CSS portfolio and resume site deployed to AWS S3
 - AWS CloudFront for CDN
 
 **Structure:**
+
 - `index.html`: Main resume and portfolio landing page
 - `architecture.html`: Technical explanation of how this website is built and deployed
 - `contact.html`: Contact information page
@@ -27,6 +29,7 @@ Resume website is a static HTML/CSS portfolio and resume site deployed to AWS S3
 - `.github/workflows/`: CI/CD pipelines for testing and deployment
 
 **Deployment:**
+
 - `dev.yml`: Deploys to dev S3 bucket on pushes to non-main branches
 - `main.yml`: Deploys to production S3 bucket and invalidates CloudFront cache on pushes to main
 - `test.yml`: Runs Super Linter (code quality checks) on PRs and pushes to main
@@ -38,6 +41,7 @@ All commits must be signed. When creating PRs or pushing changes, ensure status 
 ## Common Commands
 
 **View the website locally:**
+
 ```sh
 # Open index.html in a browser
 open index.html
@@ -45,6 +49,7 @@ open index.html
 
 **Linting:**
 The project uses Super Linter via GitHub Actions on PRs and main branch pushes. To validate code locally before pushing:
+
 ```sh
 # Code should follow markdown, HTML, CSS, and YAML standards
 # Check for trailing whitespace, proper formatting in HTML/CSS/YAML files
