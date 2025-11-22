@@ -254,6 +254,8 @@ img {
 
 .infographic {
   border-radius: 0;
+  max-height: 1600px;
+  min-width: auto;
 }
 
 .descriptors {
