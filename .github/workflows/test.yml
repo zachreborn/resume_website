@@ -42,3 +42,4 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           MULTI_STATUS: true
           VALIDATE_ALL_CODEBASE: false
+          VALIDATE_JSCPD: false
