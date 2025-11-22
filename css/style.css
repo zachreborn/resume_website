@@ -322,6 +322,13 @@ img {
   color: #ff479c;
 }
 
+.experience-company {
+  font-size: 1.125rem;
+  font-weight: 200;
+  color: #eceff1;
+  margin: 0.25rem 0;
+}
+
 .experience-summary {
   font-size: 1rem;
   margin-top: 1rem;
@@ -333,47 +340,33 @@ img {
 
 .skills-content {
   padding: 0;
-}
-
-.skill {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  margin: 0.5rem 0 0;
-}
-
-.skill span {
-  margin-left: 5rem;
-  text-align: right;
-}
-
-meter {
-  height: 1.875rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(12.5rem, 1fr));
+  gap: 1.5rem;
   width: 100%;
-  min-width: 15.625rem;
-  max-width: 62.5rem;
 }
 
-/* Webkit meter */
-meter::-webkit-meter-bar {
-  background: none;
-  background-color: #eceff180;
-  border-radius: 0.125rem;
+.skill-card {
+  background-color: #263238;
+  border: 0.0625rem solid #80cbc4;
+  border-radius: 0.5rem;
+  padding: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  min-height: 6.25rem;
+  transition: all 0.3s ease;
 }
 
-meter::-webkit-meter-optimum-value {
-  background-color: #80cbc4;
+.skill-card:hover {
+  border-color: #ff479c;
+  box-shadow: 0 0 0.5rem rgba(128, 203, 196, 0.3);
 }
 
-/* Firefox meter */
-meter::-moz-meter-bar {
-  background: none;
-  background-color: #eceff180;
-  border-radius: 0.125rem;
-}
-
-meter::-moz-meter-optimum::-moz-meter-bar {
-  background-color: #80cbc4;
+.skill-card h5 {
+  margin: 0;
+  font-size: 1rem;
 }
 
 .education-header {
@@ -459,10 +452,6 @@ meter::-moz-meter-optimum::-moz-meter-bar {
     margin: 0 0 1.25rem;
   }
 
-  .experience {
-    margin: 0 0 1.25rem 0.25rem;
-  }
-
   .experience-date-header {
     font-size: 1.25rem;
   }
@@ -477,15 +466,8 @@ meter::-moz-meter-optimum::-moz-meter-bar {
 
   .skills-content {
     margin: 0 0 1.25rem;
-  }
-
-  .skill {
-    margin: 0 0 0.5rem;
-  }
-
-  .skill span {
-    margin-left: 0;
-    text-align: left;
+    grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+    gap: 1rem;
   }
 
   .education-header {
