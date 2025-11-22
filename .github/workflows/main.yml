@@ -5,6 +5,9 @@ on:
     branches:
       - main
 
+permissions:
+  contents: read
+
 jobs:
   prod_deploy:
     name: 'Prod Website Deploy'
