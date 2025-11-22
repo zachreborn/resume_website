@@ -8,6 +8,9 @@ on:
       - production
       - prod
 
+permissions:
+  contents: read
+
 jobs:
   dev_deploy:
     name: 'Dev Website Deploy'
