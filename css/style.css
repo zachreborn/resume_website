@@ -252,6 +252,10 @@ img {
   border-radius: 5%;
 }
 
+.infographic {
+  border-radius: 0;
+}
+
 .descriptors {
   font-weight: 100;
   text-align: left;
@@ -323,7 +327,7 @@ img {
   margin-top: 1rem;
 }
 
-.highlights ul {
+.achievements ul {
   margin-top: 2rem;
 }
 
