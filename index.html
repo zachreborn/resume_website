@@ -504,59 +504,179 @@
 
     <hr class="section-divider" />
 
-    <!-- Photo Gallery -->
-    <div class="gallery container">
-      <div class="header">
-        <h3><span class="dot">.</span>Photos</h3>
+    <!-- Photo Gallery Masonry -->
+    <div class="gallery">
+      <div class="container">
+        <div class="header">
+          <h3><span class="dot">.</span>Photos</h3>
+        </div>
       </div>
-      <div class="photos center" id="gallery">
-        <img
-          class="photo"
-          src="./media/images/2022_aws_partner_award.jpg"
-          alt="Zachary Hill accepting the AWS Partner Award 2022 with three AWS leaders."
-        />
-        <img
-          class="photo"
-          src="./media/images/zachary_adventure.jpg"
-          alt="Zachary Hill embarking on a fishing trip. In the background is an Airstream and bush planes in a morning sunrise."
-        />
-        <img
-          class="photo"
-          src="./media/images/ts_zachary_team_building.jpg"
-          alt="Zachary Hill with group of people teambuilding by building bridges out of marshmellows and sticks."
-        />
-        <img
-          class="photo"
-          src="./media/images/ts_zachary_aws_speaking.jpeg"
-          alt="Zachary Hill speaking at AWS re:invent 2022"
-        />
-        <img
-          class="photo"
-          src="./media/images/xita_fishing.jpg"
-          alt="Xita, a dog, in a boat at sunset on a lake on Ontario Canada."
-        />
-        <img
-          class="photo"
-          src="./media/images/2022_aws_partner_of_the_year.jpg"
-          alt="2022 AWS Partner of the Year trophy sitting on a table."
-        />
-        <img
-          class="photo"
-          src="./media/images/zachary_backpacking.jpg"
-          alt="Zachary Hill backpacking in the mountains of Tahoe National Forest."
-        />
-        <img
-          class="photo"
-          src="./media/images/ts_zachary_volunteering.jpg"
-          alt="Zachary Hill volunteering at a local food bank."
-        />
-        <img
-          class="photo"
-          src="./media/images/xita_hiking.jpg"
-          alt="Xita, a dog, hiking in the mountains of New Mexico."
-        />
+      <div class="masonry-grid" id="gallery">
+        <div class="masonry-item" onclick="openLightbox(this)" data-title="AWS Partner Award 2022" data-category="Recognition & Achievement" data-description="Recognized for exceptional partnership and innovation in cloud architecture. This award reflects years of dedication to delivering world-class solutions with AWS.">
+          <img
+            class="masonry-photo"
+            src="./media/images/2022_aws_partner_award.jpg"
+            alt="Zachary Hill accepting the AWS Partner Award 2022 with three AWS leaders."
+          />
+          <div class="masonry-overlay">
+            <div class="masonry-title">AWS Partner Award 2022</div>
+          </div>
+        </div>
+
+        <div class="masonry-item" onclick="openLightbox(this)" data-title="Bush Planes & Fishing" data-category="Personal Passion" data-description="Embracing the spirit of adventure. From remote fishing expeditions to exploring new frontiers, balancing professional pursuits with a love of exploration.">
+          <img
+            class="masonry-photo"
+            src="./media/images/zachary_adventure.jpg"
+            alt="Zachary Hill embarking on a fishing trip. In the background is an Airstream and bush planes in a morning sunrise."
+          />
+          <div class="masonry-overlay">
+            <div class="masonry-title">Bush Planes & Fishing</div>
+          </div>
+        </div>
+
+        <div class="masonry-item" onclick="openLightbox(this)" data-title="Team Building & Culture" data-category="Leadership & Culture" data-description="Building strong teams through creative experiences and collaborative activities. Fostering trust, communication, and camaraderie that translates to exceptional outcomes.">
+          <img
+            class="masonry-photo"
+            src="./media/images/ts_zachary_team_building.jpg"
+            alt="Zachary Hill with group of people teambuilding by building bridges out of marshmellows and sticks."
+          />
+          <div class="masonry-overlay">
+            <div class="masonry-title">Team Building</div>
+          </div>
+        </div>
+
+        <div class="masonry-item" onclick="openLightbox(this)" data-title="AWS re:Invent Speaking" data-category="Thought Leadership" data-description="Sharing technical expertise and architectural insights with the global AWS community at the largest cloud conference. Demonstrating commitment to advancing the industry.">
+          <img
+            class="masonry-photo"
+            src="./media/images/ts_zachary_aws_speaking.jpeg"
+            alt="Zachary Hill speaking at AWS re:invent 2022"
+          />
+          <div class="masonry-overlay">
+            <div class="masonry-title">AWS re:Invent 2022</div>
+          </div>
+        </div>
+
+        <div class="masonry-item" onclick="openLightbox(this)" data-title="Sunset Adventure" data-category="Personal Passion" data-description="Sharing adventures with the best companion. Whether on water or land, creating memories and living life to the fullest with unwavering loyalty by your side.">
+          <img
+            class="masonry-photo"
+            src="./media/images/xita_fishing.jpg"
+            alt="Xita, a dog, in a boat at sunset on a lake on Ontario Canada."
+          />
+          <div class="masonry-overlay">
+            <div class="masonry-title">Sunset Adventure</div>
+          </div>
+        </div>
+
+        <div class="masonry-item" onclick="openLightbox(this)" data-title="AWS Partner of Year" data-category="Elite Recognition" data-description="The ultimate recognition as an AWS Partner. This prestigious award celebrates transformational impact and innovation in the AWS ecosystem.">
+          <img
+            class="masonry-photo"
+            src="./media/images/2022_aws_partner_of_the_year.jpg"
+            alt="2022 AWS Partner of the Year trophy sitting on a table."
+          />
+          <div class="masonry-overlay">
+            <div class="masonry-title">AWS Partner of Year</div>
+          </div>
+        </div>
+
+        <div class="masonry-item" onclick="openLightbox(this)" data-title="Tahoe Backpacking" data-category="Personal Passion" data-description="Discovering solitude and perspective in nature's grandeur. The mountains provide inspiration, clarity, and the perfect backdrop for personal reflection and growth.">
+          <img
+            class="masonry-photo"
+            src="./media/images/zachary_backpacking.jpg"
+            alt="Zachary Hill backpacking in the mountains of Tahoe National Forest."
+          />
+          <div class="masonry-overlay">
+            <div class="masonry-title">Tahoe Backpacking</div>
+          </div>
+        </div>
+
+        <div class="masonry-item" onclick="openLightbox(this)" data-title="Community Service" data-category="Giving Back" data-description="Committed to making a positive impact in the community. Volunteering time and energy to support those in need, believing in the power of collective action.">
+          <img
+            class="masonry-photo"
+            src="./media/images/ts_zachary_volunteering.jpg"
+            alt="Zachary Hill volunteering at a local food bank."
+          />
+          <div class="masonry-overlay">
+            <div class="masonry-title">Community Service</div>
+          </div>
+        </div>
+
+        <div class="masonry-item" onclick="openLightbox(this)" data-title="Mountain Hiking" data-category="Personal Passion" data-description="Exploring diverse landscapes and ecosystems. From desert vistas to mountain peaks, each adventure brings new perspectives and unforgettable experiences.">
+          <img
+            class="masonry-photo"
+            src="./media/images/xita_hiking.jpg"
+            alt="Xita, a dog, hiking in the mountains of New Mexico."
+          />
+          <div class="masonry-overlay">
+            <div class="masonry-title">Mountain Hiking</div>
+          </div>
+        </div>
       </div>
     </div>
+
+    <!-- Lightbox Modal -->
+    <div class="lightbox" id="lightbox">
+      <button class="lightbox-close" onclick="closeLightbox()">&times;</button>
+      <div class="lightbox-content">
+        <img class="lightbox-image" id="lightbox-image" src="" alt="" />
+        <div class="lightbox-info">
+          <div class="lightbox-year" id="lightbox-year"></div>
+          <h2 class="lightbox-title" id="lightbox-title"></h2>
+          <p class="lightbox-category" id="lightbox-category"></p>
+          <p class="lightbox-description" id="lightbox-description"></p>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      const lightbox = document.getElementById("lightbox");
+
+      function openLightbox(element) {
+        const img = element.querySelector("img");
+        const title = element.getAttribute("data-title");
+        const category = element.getAttribute("data-category");
+        const description = element.getAttribute("data-description");
+
+        document.getElementById("lightbox-image").src = img.src;
+        document.getElementById("lightbox-image").alt = img.alt;
+        document.getElementById("lightbox-title").textContent = title;
+        document.getElementById("lightbox-category").textContent = category;
+        document.getElementById("lightbox-description").textContent = description;
+
+        lightbox.classList.add("active");
+        document.body.style.overflow = "hidden";
+      }
+
+      function closeLightbox() {
+        lightbox.classList.remove("active");
+        document.body.style.overflow = "auto";
+      }
+
+      // Close on ESC key
+      document.addEventListener("keydown", (e) => {
+        if (e.key === "Escape" && lightbox.classList.contains("active")) {
+          closeLightbox();
+        }
+      });
+
+      // Close on background click
+      lightbox.addEventListener("click", (e) => {
+        if (e.target === lightbox) {
+          closeLightbox();
+        }
+      });
+
+      // Parallax effect on scroll
+      const items = document.querySelectorAll(".masonry-item");
+      window.addEventListener("scroll", () => {
+        items.forEach((item) => {
+          const rect = item.getBoundingClientRect();
+          const scrolled = window.pageYOffset;
+          const offset = rect.top + scrolled;
+          const distance = (window.pageYOffset - offset + window.innerHeight) * 0.05;
+          item.style.transform = `translateY(${distance}px)`;
+        });
+      });
+    </script>
 
     <!-- Footer Copyright-->
     <footer>
