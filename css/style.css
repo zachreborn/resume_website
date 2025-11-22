@@ -267,7 +267,8 @@ img {
   display: flex;
   flex-direction: row;
   margin: 5.25rem 1rem;
-  width: 98%;
+  width: auto;
+  max-width: 98%;
 }
 
 .center {
@@ -351,7 +352,7 @@ img {
 }
 
 .skills-content {
-  padding: 0;
+  padding: 1.5rem;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
   gap: 2rem;
@@ -380,7 +381,7 @@ img {
 }
 
 .skill-category .skill-card {
-  margin-bottom: 1rem;
+  margin-bottom: 1.75rem;
 }
 
 .skill-category .skill-card:last-child {
@@ -396,6 +397,7 @@ img {
   align-items: center;
   justify-content: center;
   text-align: center;
+  margin-bottom: 1.75rem;
   min-height: 6.25rem;
   transition: all 0.3s ease;
 }
@@ -598,6 +600,7 @@ img {
 
   .education-item {
     padding-left: 1rem;
+    margin-bottom: 0.75rem;
   }
 
   .education-item-title {
