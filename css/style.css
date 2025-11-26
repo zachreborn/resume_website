@@ -21,7 +21,7 @@ h2 {
 }
 
 h3 {
-  font-size: 1.75rem;
+  font-size: 2rem;
   font-weight: 200;
   color: #eceff1;
 }
@@ -35,13 +35,13 @@ h4 {
 
 h5,
 h6 {
-  font-size: 1.125rem;
+  font-size: 1.25rem;
   font-weight: 200;
   color: #eceff1;
 }
 
 p {
-  font-size: 1.125rem;
+  font-size: 1.25rem;
   font-weight: 200;
   color: #eceff1;
   margin: 0.25rem 0;
@@ -62,7 +62,7 @@ header {
   color: #eceff1;
   cursor: pointer;
   display: flex;
-  font-size: 1.75rem;
+  font-size: 2rem;
   font-weight: 300;
   text-align: left;
   text-decoration: none;
@@ -126,7 +126,7 @@ header {
 
 .menu li a {
   display: block;
-  font-size: 1.5rem;
+  font-size: 2rem;
   color: #eceff1;
   text-decoration: none;
 }
@@ -224,7 +224,7 @@ header {
 }
 
 .greetings-text p {
-  font-size: 1.5rem;
+  font-size: 2rem;
   margin: 0.5rem 1.5rem;
 }
 
@@ -292,7 +292,7 @@ img {
 
 .dot {
   color: #ff479c;
-  font-size: 1.75rem;
+  font-size: 2rem;
   font-weight: 200;
 }
 
@@ -335,17 +335,18 @@ img {
 .experience-title {
   margin-top: 0.5rem;
   color: #ff479c;
+  font-size: 1.5rem;
 }
 
 .experience-company {
-  font-size: 1.125rem;
+  font-size: 1.5rem;
   font-weight: 200;
   color: #eceff1;
   margin: 0.25rem 0;
 }
 
 .experience-summary {
-  font-size: 1rem;
+  font-size: 1.25rem;
   margin-top: 1rem;
 }
 
@@ -378,7 +379,7 @@ img {
 }
 
 .skill-category-icon {
-  font-size: 1.25rem;
+  font-size: 1.5rem;
   color: #ff479c;
 }
 
@@ -411,7 +412,7 @@ img {
 
 .skill-card h5 {
   margin: 0;
-  font-size: 1rem;
+  font-size: 1.25rem;
 }
 
 .education-header {
@@ -445,7 +446,7 @@ img {
 }
 
 .education-category-icon {
-  font-size: 1.25rem;
+  font-size: 1.5rem;
   color: #ff479c;
 }
 
@@ -461,21 +462,21 @@ img {
 }
 
 .education-item-title {
-  font-size: 1.125rem;
+  font-size: 1.5rem;
   font-weight: 200;
   color: #ff479c;
   margin-bottom: 0.25rem;
 }
 
 .education-item-issuer {
-  font-size: 1rem;
+  font-size: 1.5rem;
   font-weight: 200;
   color: #eceff1;
   margin-bottom: 0.25rem;
 }
 
 .education-item-year {
-  font-size: 0.95rem;
+  font-size: 1.5rem;
   font-weight: 200;
   color: #80cbc4;
 }
@@ -583,7 +584,7 @@ img {
 
 .masonry-title {
   color: #eceff1;
-  font-size: 0.9rem;
+  font-size: 1.5rem;
   font-weight: 200;
 }
 
@@ -645,7 +646,7 @@ img {
 }
 
 .lightbox-year {
-  font-size: 0.85rem;
+  font-size: 1.25rem;
   color: #80cbc4;
   text-transform: uppercase;
   letter-spacing: 0.1rem;
@@ -660,13 +661,13 @@ img {
 }
 
 .lightbox-category {
-  font-size: 1rem;
+  font-size: 1.5rem;
   color: #ff479c;
   margin-bottom: 1.25rem;
 }
 
 .lightbox-description {
-  font-size: 1rem;
+  font-size: 1.25rem;
   color: #eceff1;
   line-height: 1.6;
   font-weight: 200;
@@ -741,15 +742,15 @@ img {
   }
 
   .experience-date-header {
-    font-size: 1.25rem;
+    font-size: 1.5rem;
   }
 
   .experience-title {
-    font-size: 1.25rem;
+    font-size: 1.5rem;
   }
 
   .experience-summary {
-    font-size: 1rem;
+    font-size: 1.25rem;
   }
 
   /* Experience mobile layout */
@@ -771,7 +772,7 @@ img {
   }
 
   .skill-category-title {
-    font-size: 1.25rem;
+    font-size: 1.5rem;
     margin-bottom: 1rem;
   }
 
@@ -795,7 +796,7 @@ img {
   }
 
   .education-category-title {
-    font-size: 1.25rem;
+    font-size: 1.5rem;
     margin-bottom: 1rem;
   }
 
@@ -805,15 +806,15 @@ img {
   }
 
   .education-item-title {
-    font-size: 1rem;
+    font-size: 1.5rem;
   }
 
   .education-item-issuer {
-    font-size: 0.95rem;
+    font-size: 1.5rem;
   }
 
   .education-item-year {
-    font-size: 0.9rem;
+    font-size: 1.5rem;
   }
 
   .photos {
