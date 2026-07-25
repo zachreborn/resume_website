@@ -714,7 +714,7 @@ img {
 }
 
 .icon-link a {
-  color: #80cbc4;
+  color: #eceff1;
   transition: color 0.3s ease;
 }
 
@@ -754,7 +754,7 @@ img {
 }
 
 .footer-links a:hover {
-  color: #80cbc4;
+  color: #ff479c;
 }
 
 /* Achievements list */
