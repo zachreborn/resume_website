@@ -136,6 +136,11 @@ header {
   font-size: 2rem;
   color: #eceff1;
   text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.menu li a:hover {
+  color: #ff479c;
 }
 
 .menu li a::after {
