@@ -86,9 +86,12 @@
 
 - ![HTML]
 - ![CSS]
-- [![GitHub Co-Pilot][github.com]][github-url]
 - [![AMAZONAWS][aws.amazon.com]][aws-url]
-- [![Docker][docker.com]][docker-url]
+- [![GitHub][github.com]][github-url]
+
+A static HTML/CSS site hosted on **AWS S3** and served through **AWS CloudFront**
+(CDN) with **Route 53** DNS. The AWS environment is provisioned with
+**Terraform**, and deployments are automated with **GitHub Actions**.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -96,16 +99,13 @@
 
 ## Getting Started
 
-To get a local copy up and running follow these simple example steps.
+This is a build-free static site &mdash; there is no bundler, package manager, or
+container to run. Open the HTML files directly in a browser.
 
 ### Prerequisites
 
-This is an example of how to list things you need to use the software and how to install them.
-
-- Docker
-  ```sh
-  sudo apt install docker
-  ```
+- A modern web browser
+- (Optional) [Git](https://git-scm.com/) to clone the repository
 
 ### Installation
 
@@ -113,14 +113,40 @@ This is an example of how to list things you need to use the software and how to
    ```sh
    git clone https://github.com/zachreborn/resume_website.git
    ```
-2. Build docker container image
+2. Open the site locally
    ```sh
-   docker build -t resume_website
+   open index.html
    ```
-3. Run docker container
-   ```sh
-   docker run -dp 80:80 resume_website
-   ```
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- DEPLOYMENT -->
+
+## Deployment
+
+Deployments are handled automatically by GitHub Actions:
+
+- **Dev** (`.github/workflows/dev.yml`): runs on pushes to any branch except
+  `main`/`master`/`production`/`prod`; syncs the site to the dev S3 bucket.
+- **Prod** (`.github/workflows/main.yml`): runs on pushes to `main`; syncs to the
+  prod S3 bucket and invalidates the CloudFront cache.
+- **Test** (`.github/workflows/test.yml`): runs Super Linter on pull requests.
+
+### AWS authentication (OIDC)
+
+The deployment workflows authenticate to AWS using **GitHub OIDC** rather than
+long-lived access keys. Each job assumes an IAM role via
+`aws-actions/configure-aws-credentials@v4` using `role-to-assume`. Configure the
+following per-environment GitHub Actions variables:
+
+- `AWS_ROLE_ARN` &mdash; IAM role the workflow assumes (trusts the GitHub OIDC provider)
+- `AWS_DEV_REGION` / `AWS_PROD_REGION`
+- `AWS_DEV_BUCKET_NAME` / `AWS_PROD_BUCKET_NAME`
+- `AWS_PROD_CLOUDFRONT_DISTRIBUTION_ID`
+
+The IAM role and its OIDC trust policy are managed in Terraform (see the
+[Terraform repository](https://github.com/zachreborn/octo_prod_resume)). No AWS
+access keys are stored as repository secrets.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -128,7 +154,8 @@ This is an example of how to list things you need to use the software and how to
 
 ## Usage
 
-_For more examples, please refer to the [Documentation](https://zacharyhill.co)_
+See the live site and the [architecture page](https://zacharyhill.co/architecture.html)
+for a topology diagram and deployment overview.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -184,5 +211,3 @@ Project Link: [https://github.com/zachreborn/resume_website](https://github.com/
 [aws-url]: https://aws.amazon.com
 [github.com]: https://img.shields.io/badge/Github-181717?style=for-the-badge&logo=github&logoColor=white
 [github-url]: https://github.com
-[docker.com]: https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white
-[docker-url]: https://docker.com

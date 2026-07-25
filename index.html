@@ -7,8 +7,37 @@
       name="description"
       content="Zachary Hill - CTO and technology leader with 20+ years of experience in cloud architecture, cybersecurity, and team leadership."
     />
-    <title>Zachary Hill - Resume Summary</title>
+    <title>Zachary Hill - CTO &amp; Technology Leader</title>
+    <link rel="canonical" href="https://zacharyhill.co/" />
+    <meta name="theme-color" content="#263238" />
     <link rel="icon" type="image/x-icon" href="./media/images/favicon.ico" />
+    <link rel="apple-touch-icon" href="./media/images/favicon.ico" />
+    <link rel="manifest" href="/site.webmanifest" />
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://zacharyhill.co/" />
+    <meta property="og:title" content="Zachary Hill - CTO &amp; Technology Leader" />
+    <meta
+      property="og:description"
+      content="Zachary Hill - CTO and technology leader with 20+ years of experience in cloud architecture, cybersecurity, and team leadership."
+    />
+    <meta
+      property="og:image"
+      content="https://zacharyhill.co/media/images/ts_zachary_bw.jpg"
+    />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Zachary Hill - CTO &amp; Technology Leader" />
+    <meta
+      name="twitter:description"
+      content="Zachary Hill - CTO and technology leader with 20+ years of experience in cloud architecture, cybersecurity, and team leadership."
+    />
+    <meta
+      name="twitter:image"
+      content="https://zacharyhill.co/media/images/ts_zachary_bw.jpg"
+    />
 
     <!-- Google tag (gtag.js) -->
     <script
@@ -49,8 +78,11 @@
 
       <!-- Menu Button -->
       <input class="menu-button" type="checkbox" id="menu-button" />
-      <label class="hamburger" for="menu-button"
-        ><span class="hamburger-line"></span
+      <label
+        class="hamburger"
+        for="menu-button"
+        aria-label="Toggle navigation menu"
+        ><span class="hamburger-line" aria-hidden="true"></span
       ></label>
 
       <!-- Navigation Links -->
@@ -58,10 +90,11 @@
         <ul class="menu">
           <li class="item"><a href="index.html">Home</a></li>
           <li class="item"><a href="index.html#about-me">About</a></li>
+          <li class="item"><a href="index.html#experience">Experience</a></li>
+          <li class="item"><a href="index.html#skills">Skills</a></li>
+          <li class="item"><a href="index.html#education">Education</a></li>
+          <li class="item"><a href="index.html#gallery">Photos</a></li>
           <li class="item"><a href="contact.html">Contact</a></li>
-          <li class="item">
-            <a href="architecture.html">About This Website</a>
-          </li>
         </ul>
       </nav>
     </header>
@@ -75,6 +108,13 @@
           Technologist / Leader / Maven / Architect / Engineer / Solver of
           Problems / Adventure Enthusiast
         </p>
+        <a
+          class="hero-cta"
+          href="./media/pdfs/zachary_hill_resume_web_v12.pdf"
+          target="_blank"
+          rel="noopener"
+          ><i class="fa-regular fa-file-pdf"></i> Download Résumé</a
+        >
       </div>
       <img
         src="./media/images/ts_zachary_bw.jpg"
@@ -206,7 +246,7 @@
           <p class="experience-summary">
             Technology visionary, strategist, and leader. With a new leadership
             team, Sunward was going through a transition phase rebuilding their
-            culture and vision. My role was to rebuild the culture, stabalize
+            culture and vision. My role was to rebuild the culture, stabilize
             the technology, and move into the modern era where technology
             platforms enabled business outcomes.
           </p>
@@ -228,7 +268,7 @@
           <p class="experience-summary">
             An organization trying to reinvent itself with new leadership and a
             new direction. My role was to provide vision, strategy, and
-            experience in technology. Ultimiately culminating in the creation of
+            experience in technology. Ultimately culminating in the creation of
             a new arm of the business with new products and services based on a
             3 year strategy.
           </p>
@@ -249,7 +289,7 @@
         <div class="experience-content">
           <h4 class="experience-date-header">2016 - 2018</h4>
           <p class="experience-title">VP of Architecture</p>
-          <p>Think|Stack</p>
+          <p class="experience-company">Think|Stack</p>
           <p class="experience-summary">
             Built out a project team in my first year in order to expand
             projects offered. Turned my focus to designing and building out a
@@ -266,7 +306,7 @@
           <p class="experience-title">
             Senior Network Engineer &#38; Systems Engineer
           </p>
-          <p>RedZone Technologies</p>
+          <p class="experience-company">RedZone Technologies</p>
           <p class="experience-summary">
             Oversaw all networking projects within my first three months while
             self-teaching with CCNA courses. Focused on learning from the
@@ -280,7 +320,7 @@
         <div class="experience-content">
           <h4 class="experience-date-header">2006 - 2008</h4>
           <p class="experience-title">Helpdesk Technician</p>
-          <p>DRAW Enterprises</p>
+          <p class="experience-company">DRAW Enterprises</p>
           <p class="experience-summary">
             Honed my technical skills and quickly showed aptitude to manage
             servers and key environment components such as: citrix, network
@@ -297,12 +337,88 @@
       <div class="achievements header">
         <h3><span class="dot">.</span>Achievements</h3>
       </div>
-      <img
-        src="./media/images/zachary_hill_infographic.png"
-        alt="Zachary Hill's professional achievements and accolades infographic."
-        id="achievements-infographic"
-        class="infographic"
-      />
+      <div class="achievements-content content" id="achievements">
+        <ul class="achievements-list">
+          <li>
+            <i class="fa-solid fa-trophy" aria-hidden="true"></i>
+            AWS Nonprofit Partner of the Year &mdash; 2021 &amp; 2022
+          </li>
+          <li>
+            <i class="fa-solid fa-chart-line" aria-hidden="true"></i>
+            Averaged ~20% year-over-year growth in products and services at
+            Think|Stack
+          </li>
+          <li>
+            <i class="fa-solid fa-file-invoice-dollar" aria-hidden="true"></i>
+            Created the annual technology budget for 20+ financial institutions
+          </li>
+          <li>
+            <i class="fa-solid fa-map" aria-hidden="true"></i>
+            Built technology roadmaps for 50+ financial institutions
+          </li>
+          <li>
+            <i class="fa-solid fa-shield-halved" aria-hidden="true"></i>
+            Led incident response and recovery for 7 major ransomware events
+          </li>
+          <li>
+            <i class="fa-solid fa-cloud" aria-hidden="true"></i>
+            Built a cloud backup SaaS product on serverless technology
+          </li>
+          <li>
+            <i class="fa-solid fa-users" aria-hidden="true"></i>
+            CTO / CIO / CISO advisor for 30+ organizations over 11+ years
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <hr class="section-divider" />
+
+    <!-- Selected Impact (Sunward) -->
+    <!--
+      TODO (Zachary): Replace the placeholder metrics below with real,
+      defensible numbers from your Sunward tenure (team size, budget owned,
+      systems migrated, uptime/resilience gains, security program maturity,
+      AI initiatives, cost savings, etc.). Each card follows a
+      Challenge -> Action -> Result structure. Do not ship with the
+      [ADD METRIC] placeholders still in place.
+    -->
+    <div class="impact container">
+      <div class="impact header">
+        <h3><span class="dot">.</span>Selected Impact</h3>
+      </div>
+      <div class="impact-content" id="impact">
+        <div class="impact-card">
+          <h4 class="impact-card-title">Security Program Maturity</h4>
+          <p class="impact-card-meta">Sunward &middot; 2023&ndash;Present</p>
+          <p>
+            Built and matured the cybersecurity program around the NIST
+            Cybersecurity Framework.
+            <strong>[ADD METRIC: e.g. raised maturity from X to Y, reduced
+            critical vulnerabilities by Z%].</strong>
+          </p>
+        </div>
+        <div class="impact-card">
+          <h4 class="impact-card-title">Technology Stabilization</h4>
+          <p class="impact-card-meta">Sunward &middot; 2023&ndash;2024</p>
+          <p>
+            Stabilized core platforms and modernized infrastructure during a
+            leadership transition.
+            <strong>[ADD METRIC: e.g. improved uptime to X%, migrated Y
+            systems, retired Z legacy platforms].</strong>
+          </p>
+        </div>
+        <div class="impact-card">
+          <h4 class="impact-card-title">Team &amp; Culture</h4>
+          <p class="impact-card-meta">Sunward &middot; 2023&ndash;Present</p>
+          <p>
+            Rebuilt the technology organization and culture, aligning delivery
+            to business outcomes.
+            <strong>[ADD METRIC: e.g. grew team to X, reduced attrition by Y%,
+            delivered Z strategic initiatives].</strong>
+          </p>
+        </div>
+      </div>
     </div>
 
     <hr class="section-divider" />
@@ -691,9 +807,23 @@
         }
       });
 
-      // Parallax effect on scroll
+      // Close hamburger menu when a nav link is clicked
+      document.querySelectorAll(".menu a").forEach((link) => {
+        link.addEventListener("click", () => {
+          document.getElementById("menu-button").checked = false;
+        });
+      });
+
+      // Parallax effect + scroll-spy, throttled with requestAnimationFrame
       const items = document.querySelectorAll(".masonry-item");
-      window.addEventListener("scroll", () => {
+      const spySections = document.querySelectorAll(
+        "#about-me, #philosophy, #experience, #skills, #education, #gallery"
+      );
+      const navLinks = document.querySelectorAll(".menu li a");
+      let ticking = false;
+
+      function onScroll() {
+        // Parallax
         items.forEach((item) => {
           const rect = item.getBoundingClientRect();
           const scrolled = window.pageYOffset;
@@ -702,14 +832,66 @@
             (window.pageYOffset - offset + window.innerHeight) * 0.05;
           item.style.transform = `translateY(${distance}px)`;
         });
+
+        // Scroll-spy: mark the nav link for the section in view as active
+        let current = "";
+        spySections.forEach((section) => {
+          if (window.pageYOffset >= section.offsetTop - 120) {
+            current = section.getAttribute("id");
+          }
+        });
+        navLinks.forEach((link) => {
+          link.classList.toggle(
+            "active",
+            current !== "" && link.getAttribute("href").endsWith("#" + current)
+          );
+        });
+
+        ticking = false;
+      }
+
+      window.addEventListener("scroll", () => {
+        if (!ticking) {
+          window.requestAnimationFrame(onScroll);
+          ticking = true;
+        }
       });
     </script>
 
     <!-- Footer Copyright-->
     <footer>
       <div class="footer">
-        <p><i class="fa-regular fa-copyright"></i> 2025 | Zachary Hill</p>
+        <div class="footer-links">
+          <a
+            href="https://www.linkedin.com/in/zachary-hill-5524257a/"
+            target="_blank"
+            rel="noopener"
+            aria-label="LinkedIn"
+            ><i class="fab fa-linkedin"></i
+          ></a>
+          <a
+            href="https://github.com/zachreborn"
+            target="_blank"
+            rel="noopener"
+            aria-label="GitHub"
+            ><i class="fa-brands fa-github"></i
+          ></a>
+          <a href="mailto:zhill@zacharyhill.co" aria-label="Email"
+            ><i class="fa-regular fa-envelope"></i
+          ></a>
+          <a href="architecture.html" aria-label="About this website"
+            ><i class="fa-solid fa-code"></i
+          ></a>
+        </div>
+        <p>
+          <i class="fa-regular fa-copyright"></i>
+          <span id="footer-year">2025</span> | Zachary Hill
+        </p>
       </div>
     </footer>
+    <script>
+      document.getElementById("footer-year").textContent =
+        new Date().getFullYear();
+    </script>
   </body>
 </html>

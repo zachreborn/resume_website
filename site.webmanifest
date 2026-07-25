@@ -1,0 +1,16 @@
+{
+  "name": "Zachary Hill",
+  "short_name": "Zachary Hill",
+  "description": "Zachary Hill - CTO and technology leader in cloud architecture, cybersecurity, and team leadership.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#263238",
+  "theme_color": "#263238",
+  "icons": [
+    {
+      "src": "/media/images/favicon.ico",
+      "sizes": "48x48",
+      "type": "image/x-icon"
+    }
+  ]
+}
