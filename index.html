@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="utf-8" />
@@ -17,7 +17,10 @@
     <!-- Open Graph -->
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://zacharyhill.co/" />
-    <meta property="og:title" content="Zachary Hill - CTO &amp; Technology Leader" />
+    <meta
+      property="og:title"
+      content="Zachary Hill - CTO &amp; Technology Leader"
+    />
     <meta
       property="og:description"
       content="Zachary Hill - CTO and technology leader with 20+ years of experience in cloud architecture, cybersecurity, and team leadership."
@@ -29,7 +32,10 @@
 
     <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="Zachary Hill - CTO &amp; Technology Leader" />
+    <meta
+      name="twitter:title"
+      content="Zachary Hill - CTO &amp; Technology Leader"
+    />
     <meta
       name="twitter:description"
       content="Zachary Hill - CTO and technology leader with 20+ years of experience in cloud architecture, cybersecurity, and team leadership."
@@ -234,8 +240,8 @@
             Technology visionary, strategist, and leader. My role oversees all
             technology and cybersecurity within the organization. I enable and
             protect the organization by aligning technology to business goals.
-            My team brings ideas and goals to life by bringing together the right
-            people, processes, and technology.
+            My team brings ideas and goals to life by bringing together the
+            right people, processes, and technology.
           </p>
         </div>
         <div class="experience-content">
@@ -269,8 +275,9 @@
             new direction. My role was to provide vision, strategy, and
             experience in technology. Ultimately culminating in the creation of
             a new arm of the business with new products and services based on a
-            3 year strategy. The foundation I helped build went on to scale at such
-            a rapid pace, Goveplace was purchased by private equity only two years later.
+            3 year strategy. The foundation I helped build went on to scale at
+            such a rapid pace, Goveplace was purchased by private equity only
+            two years later.
           </p>
         </div>
         <div class="experience-content">
@@ -405,8 +412,8 @@
           <h4 class="impact-card-title">Team &amp; Culture</h4>
           <p class="impact-card-meta">Sunward &middot; 2023&ndash;Present</p>
           <p>
-            Rebuilt the technology organization and culture, aligning technology delivery
-            to business outcomes.
+            Rebuilt the technology organization and culture, aligning technology
+            delivery to business outcomes.
             <strong>Delivered 64 strategic initiatives.</strong>
           </p>
         </div>
@@ -415,7 +422,10 @@
           <p class="impact-card-meta">Sunward &middot; 2025&ndash;Present</p>
           <p>
             Re-aligned the team to the DevSecOps framework and an AI Strategy.
-            <strong>Velocity increased by 3.4x and average time to market on new features from 12 weeks to 3 weeks.</strong>
+            <strong
+              >Velocity increased by 3.4x and average time to market on new
+              features from 12 weeks to 3 weeks.</strong
+            >
           </p>
         </div>
       </div>
@@ -817,7 +827,7 @@
       // Parallax effect + scroll-spy, throttled with requestAnimationFrame
       const items = document.querySelectorAll(".masonry-item");
       const spySections = document.querySelectorAll(
-        "#about-me, #philosophy, #experience, #skills, #education, #gallery"
+        "#about-me, #philosophy, #experience, #skills, #education, #gallery",
       );
       const navLinks = document.querySelectorAll(".menu li a");
       let ticking = false;
@@ -843,7 +853,7 @@
         navLinks.forEach((link) => {
           link.classList.toggle(
             "active",
-            current !== "" && link.getAttribute("href").endsWith("#" + current)
+            current !== "" && link.getAttribute("href").endsWith("#" + current),
           );
         });
 

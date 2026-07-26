@@ -13,7 +13,7 @@ permissions:
 
 jobs:
   prod_deploy:
-    name: 'Prod Website Deploy'
+    name: "Prod Website Deploy"
     runs-on: ubuntu-latest
     environment: prod
 
