@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="utf-8" />
@@ -7,8 +7,37 @@
       name="description"
       content="Get in touch with Zachary Hill. View resume, contact information, and links to LinkedIn, GitHub, and Discord."
     />
-    <title>Zachary Hill - About</title>
+    <title>Zachary Hill - Contact &amp; Résumé</title>
+    <link rel="canonical" href="https://zacharyhill.co/contact.html" />
+    <meta name="theme-color" content="#263238" />
     <link rel="icon" type="image/x-icon" href="./media/images/favicon.ico" />
+    <link rel="apple-touch-icon" href="./media/images/favicon.ico" />
+    <link rel="manifest" href="/site.webmanifest" />
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://zacharyhill.co/contact.html" />
+    <meta property="og:title" content="Zachary Hill - Contact &amp; Résumé" />
+    <meta
+      property="og:description"
+      content="Get in touch with Zachary Hill. View résumé, contact information, and links to LinkedIn, GitHub, and Discord."
+    />
+    <meta
+      property="og:image"
+      content="https://zacharyhill.co/media/images/ts_zachary_bw.jpg"
+    />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Zachary Hill - Contact &amp; Résumé" />
+    <meta
+      name="twitter:description"
+      content="Get in touch with Zachary Hill. View résumé, contact information, and links to LinkedIn, GitHub, and Discord."
+    />
+    <meta
+      name="twitter:image"
+      content="https://zacharyhill.co/media/images/ts_zachary_bw.jpg"
+    />
 
     <!-- Google tag (gtag.js) -->
     <script
@@ -49,8 +78,11 @@
 
       <!-- Menu Button -->
       <input class="menu-button" type="checkbox" id="menu-button" />
-      <label class="hamburger" for="menu-button"
-        ><span class="hamburger-line"></span
+      <label
+        class="hamburger"
+        for="menu-button"
+        aria-label="Toggle navigation menu"
+        ><span class="hamburger-line" aria-hidden="true"></span
       ></label>
 
       <!-- Navigation Links -->
@@ -58,10 +90,11 @@
         <ul class="menu">
           <li class="item"><a href="index.html">Home</a></li>
           <li class="item"><a href="index.html#about-me">About</a></li>
+          <li class="item"><a href="index.html#experience">Experience</a></li>
+          <li class="item"><a href="index.html#skills">Skills</a></li>
+          <li class="item"><a href="index.html#education">Education</a></li>
+          <li class="item"><a href="index.html#gallery">Photos</a></li>
           <li class="item"><a href="contact.html">Contact</a></li>
-          <li class="item">
-            <a href="architecture.html">About This Website</a>
-          </li>
         </ul>
       </nav>
     </header>
@@ -131,8 +164,44 @@
     <!-- Footer Copyright-->
     <footer>
       <div class="footer">
-        <p><i class="fa-regular fa-copyright"></i> 2025 | Zachary Hill</p>
+        <div class="footer-links">
+          <a
+            href="https://www.linkedin.com/in/zachary-hill-5524257a/"
+            target="_blank"
+            rel="noopener"
+            aria-label="LinkedIn"
+            ><i class="fab fa-linkedin"></i
+          ></a>
+          <a
+            href="https://github.com/zachreborn"
+            target="_blank"
+            rel="noopener"
+            aria-label="GitHub"
+            ><i class="fa-brands fa-github"></i
+          ></a>
+          <a href="mailto:zhill@zacharyhill.co" aria-label="Email"
+            ><i class="fa-regular fa-envelope"></i
+          ></a>
+          <a href="architecture.html" aria-label="About this website"
+            ><i class="fa-solid fa-code"></i
+          ></a>
+        </div>
+        <p>
+          <i class="fa-regular fa-copyright"></i>
+          <span id="footer-year">2025</span> | Zachary Hill
+        </p>
       </div>
     </footer>
+    <script>
+      document.getElementById("footer-year").textContent =
+        new Date().getFullYear();
+
+      // Close hamburger menu when a nav link is clicked
+      document.querySelectorAll(".menu a").forEach((link) => {
+        link.addEventListener("click", () => {
+          document.getElementById("menu-button").checked = false;
+        });
+      });
+    </script>
   </body>
 </html>

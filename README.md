@@ -1,3 +1,4 @@
+<!-- markdownlint-disable MD041 -->
 <!-- Improved compatibility of back to top link: See: https://github.com/othneildrew/Best-README-Template/pull/73 -->
 
 <a name="readme-top"></a>
@@ -86,9 +87,12 @@
 
 - ![HTML]
 - ![CSS]
-- [![GitHub Co-Pilot][github.com]][github-url]
 - [![AMAZONAWS][aws.amazon.com]][aws-url]
-- [![Docker][docker.com]][docker-url]
+- [![GitHub][github.com]][github-url]
+
+A static HTML/CSS site hosted on **AWS S3** and served through **AWS CloudFront**
+(CDN) with **Route 53** DNS. The AWS environment is provisioned with
+**Terraform**, and deployments are automated with **GitHub Actions**.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -96,16 +100,13 @@
 
 ## Getting Started
 
-To get a local copy up and running follow these simple example steps.
+This is a build-free static site &mdash; there is no bundler, package manager, or
+container to run. Open the HTML files directly in a browser.
 
 ### Prerequisites
 
-This is an example of how to list things you need to use the software and how to install them.
-
-- Docker
-  ```sh
-  sudo apt install docker
-  ```
+- A modern web browser
+- (Optional) [Git](https://git-scm.com/) to clone the repository
 
 ### Installation
 
@@ -113,14 +114,38 @@ This is an example of how to list things you need to use the software and how to
    ```sh
    git clone https://github.com/zachreborn/resume_website.git
    ```
-2. Build docker container image
+2. Open the site locally
    ```sh
-   docker build -t resume_website
+   open index.html
    ```
-3. Run docker container
-   ```sh
-   docker run -dp 80:80 resume_website
-   ```
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- DEPLOYMENT -->
+
+## Deployment
+
+Deployments are handled automatically by GitHub Actions:
+
+- **Dev** (`.github/workflows/dev.yml`): runs on pushes to any branch except
+  `main`/`master`/`production`/`prod`; syncs the site to the dev S3 bucket.
+- **Prod** (`.github/workflows/main.yml`): runs on pushes to `main`; syncs to the
+  prod S3 bucket and invalidates the CloudFront cache.
+- **Test** (`.github/workflows/test.yml`): runs Super Linter on pull requests.
+
+### AWS authentication
+
+The deployment workflows authenticate to AWS using static credentials stored as
+repository secrets. Configure the following in your GitHub Actions environments:
+
+- `AWS_ACCESS_KEY_ID` &mdash; IAM user access key (stored as secret)
+- `AWS_SECRET_ACCESS_KEY` &mdash; IAM user secret key (stored as secret)
+- `AWS_DEV_REGION` / `AWS_PROD_REGION`
+- `AWS_DEV_BUCKET_NAME` / `AWS_PROD_BUCKET_NAME`
+- `AWS_PROD_CLOUDFRONT_DISTRIBUTION_ID`
+
+Note: OIDC-based role assumption is planned as a future improvement (requires
+IAM role provisioning in Terraform).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -128,7 +153,8 @@ This is an example of how to list things you need to use the software and how to
 
 ## Usage
 
-_For more examples, please refer to the [Documentation](https://zacharyhill.co)_
+See the live site and the [architecture page](https://zacharyhill.co/architecture.html)
+for a topology diagram and deployment overview.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -144,7 +170,7 @@ Distributed under the MIT License. See `LICENSE.txt` for more information.
 
 ## Contact
 
-Zachary Hill - [![LinkedIn][linkedin-shield]][linkedin-url] - zhill@zacharyhill.co
+Zachary Hill - [![LinkedIn][linkedin-shield]][linkedin-url] - <zhill@zacharyhill.co>
 
 Project Link: [https://github.com/zachreborn/resume_website](https://github.com/zachreborn/resume_website)
 
@@ -184,5 +210,3 @@ Project Link: [https://github.com/zachreborn/resume_website](https://github.com/
 [aws-url]: https://aws.amazon.com
 [github.com]: https://img.shields.io/badge/Github-181717?style=for-the-badge&logo=github&logoColor=white
 [github-url]: https://github.com
-[docker.com]: https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white
-[docker-url]: https://docker.com

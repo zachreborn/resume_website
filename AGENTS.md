@@ -4,24 +4,24 @@ This file provides guidance to WARP (warp.dev) when working with code in this re
 
 ## Project Overview
 
-Resume website is a static HTML/CSS portfolio and resume site deployed to AWS S3 with CloudFront CDN. The site showcases professional background, skills, philosophy, and experience. There are no build steps, tests, or complex dependencies—this is a straightforward static site deployment.
+Resume site is a static HTML/CSS portfolio and resume site deployed to AWS S3 with CloudFront CDN. The site showcases professional background, skills, philosophy, and experience. There are no build steps, tests, or complex dependencies—this is a straightforward static site deployment.
 
 ## Architecture
 
 **Tech Stack:**
 
 - HTML5 for markup
-- CSS3 for styling (custom stylesheet in `css/style.css`)
+- CSS3 for styling (custom style sheet in `css/style.css`)
 - Google Analytics for tracking
 - Google Fonts (Fira Sans)
-- FontAwesome for icons
+- Font Awesome for icons
 - AWS S3 for hosting
 - AWS CloudFront for CDN
 
 **Structure:**
 
 - `index.html`: Main resume and portfolio landing page
-- `architecture.html`: Technical explanation of how this website is built and deployed
+- `architecture.html`: Technical explanation of how this site is built and deployed
 - `contact.html`: Contact information page
 - `error.html`: Custom error page
 - `css/style.css`: Centralized styling for all pages
@@ -40,7 +40,7 @@ All commits must be signed. When creating PRs or pushing changes, ensure status 
 
 ## Common Commands
 
-**View the website locally:**
+**View the site locally:**
 
 ```sh
 # Open index.html in a browser
