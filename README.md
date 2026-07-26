@@ -1,3 +1,4 @@
+<!-- markdownlint-disable MD041 -->
 <!-- Improved compatibility of back to top link: See: https://github.com/othneildrew/Best-README-Template/pull/73 -->
 
 <a name="readme-top"></a>
@@ -132,21 +133,19 @@ Deployments are handled automatically by GitHub Actions:
   prod S3 bucket and invalidates the CloudFront cache.
 - **Test** (`.github/workflows/test.yml`): runs Super Linter on pull requests.
 
-### AWS authentication (OIDC)
+### AWS authentication
 
-The deployment workflows authenticate to AWS using **GitHub OIDC** rather than
-long-lived access keys. Each job assumes an IAM role via
-`aws-actions/configure-aws-credentials@v4` using `role-to-assume`. Configure the
-following per-environment GitHub Actions variables:
+The deployment workflows authenticate to AWS using static credentials stored as
+repository secrets. Configure the following in your GitHub Actions environments:
 
-- `AWS_ROLE_ARN` &mdash; IAM role the workflow assumes (trusts the GitHub OIDC provider)
+- `AWS_ACCESS_KEY_ID` &mdash; IAM user access key (stored as secret)
+- `AWS_SECRET_ACCESS_KEY` &mdash; IAM user secret key (stored as secret)
 - `AWS_DEV_REGION` / `AWS_PROD_REGION`
 - `AWS_DEV_BUCKET_NAME` / `AWS_PROD_BUCKET_NAME`
 - `AWS_PROD_CLOUDFRONT_DISTRIBUTION_ID`
 
-The IAM role and its OIDC trust policy are managed in Terraform (see the
-[Terraform repository](https://github.com/zachreborn/octo_prod_resume)). No AWS
-access keys are stored as repository secrets.
+Note: OIDC-based role assumption is planned as a future improvement (requires
+IAM role provisioning in Terraform).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -171,7 +170,7 @@ Distributed under the MIT License. See `LICENSE.txt` for more information.
 
 ## Contact
 
-Zachary Hill - [![LinkedIn][linkedin-shield]][linkedin-url] - zhill@zacharyhill.co
+Zachary Hill - [![LinkedIn][linkedin-shield]][linkedin-url] - <zhill@zacharyhill.co>
 
 Project Link: [https://github.com/zachreborn/resume_website](https://github.com/zachreborn/resume_website)
 

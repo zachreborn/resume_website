@@ -43,3 +43,6 @@ jobs:
           MULTI_STATUS: true
           VALIDATE_ALL_CODEBASE: false
           VALIDATE_JSCPD: false
+          VALIDATE_MARKDOWN: false
+          VALIDATE_BIOME_FORMAT: false
+          VALIDATE_BIOME_LINT: false

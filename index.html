@@ -853,7 +853,7 @@
         navLinks.forEach((link) => {
           link.classList.toggle(
             "active",
-            current !== "" && link.getAttribute("href").endsWith("#" + current),
+            current !== "" && link.getAttribute("href").endsWith(`#${current}`),
           );
         });
 
